@@ -269,28 +269,55 @@ The complete definitions are in [docs/progress.md](docs/progress.md).
 
 ## 🏆 Results
 
-Five models on the 500 evaluation instances (`suite/v1/eval50/`), 50 per task, 500 episodes per model. Each cell
-is success rate / mean progress, in percent.
+We ran five frontier models on the same 500 evaluation episodes (`suite/v1/eval50/`), 50 for each task, with no
+task-specific training or examples. GPT-6 Astra, Claude Opus 5.5, GPT-6.1 Sol and Claude Fable 5.1 ran with medium
+thinking (`--effort medium`) and Gemini 3.8 Flash with high thinking (`--effort high`).
 
-| Family | Task | GPT-6 Astra | Claude Opus 5.5 | GPT-6.1 Sol | Claude Fable 5.1 | Gemini 3.8 Flash |
-|---|---|---:|---:|---:|---:|---:|
-| Search & Explore | Locked Storage | 28.0 / 52.9 | 6.0 / 35.2 | 12.0 / 38.5 | 8.0 / 21.7 | 0.0 / 9.2 |
-|  | Search Room | 0.0 / 31.0 | 0.0 / 26.7 | 0.0 / 19.4 | 0.0 / 19.2 | 2.0 / 17.5 |
-|  | Blackout Search | 0.0 / 23.7 | 0.0 / 17.4 | 0.0 / 18.5 | 0.0 / 17.1 | 0.0 / 4.4 |
-| Object Inspect | Painted Cubes | 30.0 / 74.8 | 14.0 / 59.2 | 18.0 / 69.2 | 14.0 / 61.5 | 2.0 / 11.3 |
-|  | Marked Mugs | 38.0 / 69.7 | 16.0 / 51.4 | 6.0 / 37.2 | 12.0 / 31.8 | 0.0 / 0.8 |
-|  | Unfamiliar Containers | 6.0 / 32.2 | 0.0 / 17.2 | 0.0 / 23.1 | 0.0 / 17.0 | 0.0 / 6.3 |
-| Testing | Puzzle Box | 96.0 / 99.6 | 68.0 / 85.5 | 72.0 / 90.9 | 70.0 / 81.0 | 12.0 / 33.0 |
-|  | Stamp Composition | 14.0 / 55.3 | 2.0 / 39.0 | 8.0 / 29.4 | 2.0 / 36.9 | 0.0 / 3.4 |
-|  | Wobbly Stand | 10.0 / 18.6 | 24.0 / 32.2 | 4.0 / 7.3 | 6.0 / 14.4 | 2.0 / 4.6 |
-|  | Odd Parcel | 10.0 / 22.3 | 8.0 / 9.7 | 2.0 / 6.7 | 2.0 / 9.0 | 2.0 / 2.0 |
-| **Overall** | | **23.2 / 48.0** | **13.8 / 37.3** | **12.2 / 34.0** | **11.4 / 31.0** | **2.0 / 9.2** |
-| Overall without Puzzle Box | | 15.1 / 42.3 | 7.8 / 32.0 | 5.6 / 27.7 | 4.9 / 25.4 | 0.9 / 6.6 |
+<p>
+  <img src="assets/readme/leaderboard.png" width="100%" alt="Bar charts of the overall results. Success rate: GPT-6 Astra 23.2%, Claude Opus 5.5 13.8%, GPT-6.1 Sol 12.2%, Claude Fable 5.1 11.4%, Gemini 3.8 Flash 2.0%. Task progress: 48.0%, 37.3%, 34.0%, 31.0% and 9.2% in the same order. Cost per episode at list prices: GPT-6.1 Sol $1.99, Gemini 3.8 Flash $3.37, Claude Opus 5.5 $6.83, GPT-6 Astra $11.29, Claude Fable 5.1 $19.22.">
+</p>
 
-GPT-6 Astra, Claude Opus 5.5, GPT-6.1 Sol and Claude Fable 5.1 run with medium thinking (`--effort medium`), Gemini
-3.8 Flash with high thinking (`--effort high`). Per-episode rows:
-[results/eval50/episodes.csv](results/eval50/episodes.csv), whose `success` and `progress` columns are the table
-above; per task and model: `results/eval50/summary.csv` and `summary.md`.
+GPT-6 Astra leads, but even it solves fewer than a quarter of the episodes. Puzzle Box is by far the easiest task:
+without it, Astra's success rate falls to 15.1% and every other model's to under 8%.
+
+### Results by task
+
+<p>
+  <img src="assets/readme/success-by-task.png" width="100%" alt="Dot plot of each model's success rate on the ten tasks. The best result per task: Locked Storage 28.0%, Search Room 2.0%, Blackout Search 0.0%, Painted Cubes 30.0%, Marked Mugs 38.0%, Unfamiliar Containers 6.0%, Puzzle Box 96.0%, Stamp Composition 14.0%, Wobbly Stand 24.0%, Odd Parcel 10.0%.">
+</p>
+
+<p>
+  <img src="assets/readme/progress-by-task.png" width="100%" alt="Dot plot of each model's average task progress on the ten tasks. The best result per task: Locked Storage 52.9%, Search Room 31.0%, Blackout Search 23.7%, Painted Cubes 74.8%, Marked Mugs 69.7%, Unfamiliar Containers 32.2%, Puzzle Box 99.6%, Stamp Composition 55.3%, Wobbly Stand 32.2%, Odd Parcel 22.3%.">
+</p>
+
+The two search tasks are almost untouched: across all five models, Search Room and Blackout Search were solved once
+in 500 episodes, even though most models get part of the way. GPT-6 Astra makes the most progress on every task
+except Wobbly Stand, where Claude Opus 5.5 leads.
+
+### Success and cost
+
+<p>
+  <img src="assets/readme/success-vs-cost.png" width="100%" alt="Scatter plot of success rate against cost per episode on a log scale. GPT-6.1 Sol: $1.99 and 12.2%. Gemini 3.8 Flash: $3.37 and 2.0%. Claude Opus 5.5: $6.83 and 13.8%. GPT-6 Astra: $11.29 and 23.2%. Claude Fable 5.1: $19.22 and 11.4%. GPT-6.1 Sol, Claude Opus 5.5 and GPT-6 Astra lie on the Pareto line.">
+</p>
+
+GPT-6.1 Sol is the cheapest model to run, at $1.99 an episode and $16.31 for each solved one. GPT-6 Astra's lead
+costs $11.29 an episode, and Claude Fable 5.1 is the most expensive at $19.22.
+
+### How episodes end
+
+<p>
+  <img src="assets/readme/episode-ends.png" width="100%" alt="Stacked bars of how each model's 500 episodes ended, next to bars of submission precision. Submitted correctly: GPT-6 Astra 23%, Claude Opus 5.5 14%, GPT-6.1 Sol 12%, Claude Fable 5.1 11%, Gemini 3.8 Flash 2%. Submitted wrongly: 62%, 32%, 63%, 54% and 56%. Claude Opus 5.5 gave up in 49% of episodes and Claude Fable 5.1 in 29%; Gemini 3.8 Flash ran out of decisions in 42% and GPT-6.1 Sol in 22%. Submission precision: Claude Opus 5.5 30.4%, GPT-6 Astra 27.3%, Claude Fable 5.1 17.5%, GPT-6.1 Sol 16.3%, Gemini 3.8 Flash 3.5%.">
+</p>
+
+An episode ends when the robot presses SUBMIT, when the model gives up or answers in text, or when it runs out of
+its 200 decisions. The models fail in different ways: GPT-6 Astra and GPT-6.1 Sol press SUBMIT in most episodes,
+often before the task is done; Claude Opus 5.5 gives up in about half of its episodes; and Gemini 3.8 Flash often
+runs out of decisions.
+
+The numbers behind these charts are in [results/eval50/](results/eval50/): `summary.md` and `summary.csv` per task
+and model, and [episodes.csv](results/eval50/episodes.csv) with one row per episode (success, progress, how it
+ended, decisions, time and tokens). Costs use the providers' list prices. The
+[project page](https://declare-lab.github.io/RoboQuest/) has interactive versions of these charts.
 
 ## 💽 Demonstration Dataset
 

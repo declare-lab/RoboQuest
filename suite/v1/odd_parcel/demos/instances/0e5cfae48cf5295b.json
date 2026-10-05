@@ -1,0 +1,274 @@
+{
+ "contract_version": "odd-parcel-kitchen-v3",
+ "factors": {
+  "kitchen_layout": 13,
+  "kitchen_style": 4,
+  "observability": "look+uncover",
+  "parcel_count": 8
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_clearance_per_side_m": [
+    0.015,
+    0.015
+   ],
+   "box_inner_m": [
+    0.1,
+    0.13
+   ],
+   "hidden": [
+    {
+     "cover": "cloche_small",
+     "mode": "cover",
+     "object": "parcel_4"
+    },
+    {
+     "cover": null,
+     "mode": "annex",
+     "object": "parcel_6"
+    }
+   ],
+   "min_footprint_margin_m": 0.02613,
+   "min_parcel_gap_m": 0.02057,
+   "min_parcel_keepout_gap_m": 0.05791,
+   "min_parcel_region_margin_m": 0.00124,
+   "min_stacked_gap_m": null,
+   "odd_count": 3,
+   "odd_tilt_static_deg": {
+    "b": 11.241431940466752,
+    "s": 6.744859164280051
+   },
+   "pan_inner_m": [
+    0.252,
+    0.152
+   ],
+   "parcel_count": 8,
+   "problems": [],
+   "stacks": 0
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are parcels on the counters in this kitchen. Most of these parcels weigh the same; fewer than half weigh differently. Put every parcel that weighs differently in the box and nothing else, leave the balance where it stands, then press Submit. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "0e5cfae48cf5295b",
+ "layout_id": 13,
+ "origin": {
+  "cell": {
+   "observability": "look+uncover",
+   "parcel_count": 8
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-24T05:35:08",
+  "registry": "internal",
+  "seed": 3200345
+ },
+ "seed": 3200345,
+ "spec": {
+  "balance": {
+   "pan_capacity": 3,
+   "xy": [
+    -0.186894,
+    0.152861
+   ],
+   "yaw": -0.13505
+  },
+  "balance_textures": {
+   "beam": "metals/bright_metal.png",
+   "frame": "metals/brighter_metal.png",
+   "pan": "metals/bright_metal.png",
+   "plate": "flat/cream.png"
+  },
+  "base_mass_kg": 0.25,
+  "box": {
+   "inner_xy": [
+    0.1,
+    0.13
+   ],
+   "outer_half": [
+    0.058,
+    0.07300000000000001
+   ],
+   "style": 279832114,
+   "xy": [
+    0.4,
+    0.02
+   ]
+  },
+  "contract_version": "odd-parcel-kitchen-v3",
+  "delta_kg": {
+   "b": 0.2,
+   "s": 0.12
+  },
+  "direction_pattern": "HL",
+  "footprint": [
+   1.2,
+   0.6
+  ],
+  "hidden": [
+   {
+    "cover": "cloche_small",
+    "mode": "cover",
+    "object": "parcel_4"
+   },
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "parcel_6"
+   }
+  ],
+  "hidden_draw": {
+   "cover_kind": "cloche_small",
+   "flavour": "object",
+   "flavour_requested": "place",
+   "look_count": 1
+  },
+  "magnitude_pattern": "same",
+  "observability": "look+uncover",
+  "odd_count": 3,
+  "odd_indices": [
+   2,
+   6,
+   7
+  ],
+  "parcel_count": 8,
+  "parcel_half": [
+   0.035,
+   0.05,
+   0.025
+  ],
+  "parcel_texture": "wood/light_wood_planks.png",
+  "parcel_tint": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "parcels": [
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_0",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     -0.06358,
+     -0.136051
+    ],
+    "yaw": 1.556531
+   },
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_1",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     -0.375438,
+     -0.148072
+    ],
+    "yaw": 0.535421
+   },
+   {
+    "delta_key": "s",
+    "direction": "H",
+    "id": "parcel_2",
+    "level": 0,
+    "mass_kg": 0.37,
+    "odd": true,
+    "on": null,
+    "xy": [
+     -0.468898,
+     -0.05865
+    ],
+    "yaw": 1.87261
+   },
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_3",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     0.04198,
+     -0.072653
+    ],
+    "yaw": -3.124062
+   },
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_4",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     0.22875,
+     -0.204931
+    ],
+    "yaw": -2.78954
+   },
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_5",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     -0.235378,
+     -0.186437
+    ],
+    "yaw": 1.838135
+   },
+   {
+    "delta_key": "s",
+    "direction": "L",
+    "id": "parcel_6",
+    "level": 0,
+    "mass_kg": 0.13,
+    "odd": true,
+    "on": null,
+    "xy": [
+     -0.218794,
+     -0.051266
+    ],
+    "yaw": -0.793042
+   },
+   {
+    "delta_key": "s",
+    "direction": "H",
+    "id": "parcel_7",
+    "level": 0,
+    "mass_kg": 0.37,
+    "odd": true,
+    "on": null,
+    "xy": [
+     0.067177,
+     -0.211491
+    ],
+    "yaw": 0.595733
+   }
+  ],
+  "show_count": false,
+  "stacks": 0,
+  "submit": {
+   "xy": [
+    0.4,
+    -0.22
+   ]
+  }
+ },
+ "split": "dev",
+ "split_key": "p8-o3-HL-same",
+ "style_id": 4,
+ "task": "odd_parcel"
+}

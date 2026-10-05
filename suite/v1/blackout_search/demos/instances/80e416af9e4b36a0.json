@@ -1,0 +1,144 @@
+{
+ "contract_version": "blackout-search-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 43,
+  "kitchen_style": 1,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 4,
+    "doors": {
+     "240": 5,
+     "270": 1,
+     "305": 1,
+     "350": 1
+    },
+    "drawers": {
+     "160": 3,
+     "202": 2,
+     "328": 1
+    },
+    "free": 112,
+    "open": 32
+   },
+   "capacity_layout": 43,
+   "closers": [],
+   "hidden_compartments_needed": 2,
+   "hiding_rule": {
+    "doors": false,
+    "floor_min_m": 0.4,
+    "kinds": [
+     "drawer",
+     "open",
+     "covered"
+    ]
+   },
+   "high_drawers": {
+    "160": 3,
+    "202": 2,
+    "328": 1
+   },
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "covered",
+    "covered"
+   ]
+  },
+  "scene": {
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 2.0,
+   "g3": true,
+   "g35": true,
+   "g3_note": "darkness render gate (EGL)"
+  }
+ },
+ "generator_version": "v3",
+ "goal": "The kitchen is dark. Collect the yellow water bottle, the blue mug and the red mug on the tray, then press Submit. They may be anywhere in this kitchen; some compartments may not open. A lantern with a glowing glass stands on a counter. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "80e416af9e4b36a0",
+ "layout_id": 43,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-05T01:03:12",
+  "note": "2026-10-05 dark fresh (crawl-d copy)",
+  "registry": "internal",
+  "seed": 5710152,
+  "staging": "internal"
+ },
+ "seed": 5710152,
+ "spec": {
+  "build_seed": 1788980007,
+  "closers": [],
+  "compartment_count": 4,
+  "contract_version": "blackout-search-kitchen-v2",
+  "counter_band": {
+   "front_fraction": 0.6667,
+   "islands": "anywhere",
+   "wall_backed_only": true
+  },
+  "cover_seed": 1660860219,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "can_red",
+   "tin_yellow"
+  ],
+  "hiding": {
+   "doors": false,
+   "floor_min_m": 0.4,
+   "kinds": [
+    "drawer",
+    "open",
+    "covered"
+   ]
+  },
+  "lamp_seed": 754812025,
+  "layout_id": 43,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1011844648,
+  "set_size": 3,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   },
+   {
+    "kind": "covered",
+    "object": "mug_blue"
+   },
+   {
+    "kind": "covered",
+    "object": "mug_red"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "can_green",
+   "tin_green"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-covered+covered+open",
+ "style_id": 1,
+ "task": "blackout_search"
+}

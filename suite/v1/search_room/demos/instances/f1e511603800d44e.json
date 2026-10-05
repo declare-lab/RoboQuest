@@ -1,0 +1,102 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 6,
+  "kitchen_layout": 25,
+  "kitchen_style": 9,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 23,
+    "doors": {
+     "240": 4
+    },
+    "drawers": {
+     "118": 6
+    },
+    "free": 126,
+    "open": 42
+   },
+   "capacity_layout": 25,
+   "closers": [
+    3,
+    5
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the blue mug and the blue water bottle on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "f1e511603800d44e",
+ "layout_id": 25,
+ "origin": {
+  "cell": {
+   "compartment_count": 6,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T10:42:19",
+  "registry": "internal",
+  "seed": 4200353
+ },
+ "seed": 4200353,
+ "spec": {
+  "build_seed": 1699155490,
+  "closers": [
+   3,
+   5
+  ],
+  "compartment_count": 6,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1014080935,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_yellow",
+   "mug_red"
+  ],
+  "layout_id": 25,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 585508067,
+  "set_size": 2,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "mug_blue"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "can_green",
+   "can_red",
+   "tin_green",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-open+open",
+ "style_id": 9,
+ "task": "search_room"
+}

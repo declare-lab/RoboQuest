@@ -1,0 +1,176 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 1,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [],
+   "decoys": [],
+   "holder_mechanisms": [
+    "lift_lid",
+    "press_drawer"
+   ],
+   "holders": [
+    2,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "flip_lid",
+    "lift_lid",
+    "press_drawer"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "front",
+    "left",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. A tomato and a lemon are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "1c7e0ccdaad7b9f6",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-24T23:13:09",
+  "registry": "internal",
+  "seed": 3100929
+ },
+ "seed": 3100929,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/light_wood_planks_long.png",
+   "knob_rgb": [
+    0.72,
+    0.73,
+    0.75
+   ],
+   "panel_texture": "wood/wood_grain_1.png"
+  },
+  "bowl_xy": [
+   -0.203239,
+   -0.173459
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 3.169333,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 4.729646,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "left",
+    "dummy_face": "left",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": -0.03669,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "right",
+    "face": "right",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "press_drawer",
+    "side": "back",
+    "yaw": 1.565194,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "lift_lid",
+   "press_drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   2,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/tomato/tomato_0/model.xml",
+   "objects/objaverse/lemon/lemon_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "tomato",
+   "lemon"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 1,
+  "layout_seed": 2019315486,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   2,
+   3,
+   0,
+   1
+  ],
+  "placement_seed": 1501997103,
+  "show_count": true,
+  "submit_xy": [
+   0.172296,
+   -0.189463
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "lift_lid+press_drawer",
+ "style_id": 1,
+ "task": "unfamiliar_containers"
+}

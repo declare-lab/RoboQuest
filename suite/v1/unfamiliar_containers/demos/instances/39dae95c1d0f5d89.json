@@ -1,0 +1,194 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 12,
+  "kitchen_style": 6,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closer_windows": {},
+   "closers": [],
+   "decoys": [],
+   "holder_mechanisms": [
+    "flip_lid",
+    "flip_lid"
+   ],
+   "holders": [
+    2,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "flip_lid",
+    "lift_lid"
+   ],
+   "observability": {
+    "hidden": [
+     "box2"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "left",
+    "right",
+    "top"
+   ]
+  },
+  "scene": {
+   "build_and_clear_access_preflight": true,
+   "closer_rule": true,
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (GPUs in use; EGL not touched)",
+   "g35": true
+  }
+ },
+ "generator_version": "v6",
+ "goal": "There are boxes on the counters in this kitchen. An egg and an orange are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "39dae95c1d0f5d89",
+ "layout_id": 12,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T18:08:53",
+  "note": "2026-10-04 layouts 12/20 batch b",
+  "registry": "internal",
+  "seed": 7135468,
+  "staging": "internal"
+ },
+ "seed": 7135468,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/light_wood_planks.png",
+   "knob_rgb": [
+    0.3,
+    0.22,
+    0.18
+   ],
+   "panel_texture": "wood/red_wood_planks.png"
+  },
+  "bowl_xy": [
+   -0.203789,
+   -0.170212
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "left",
+    "dummy_side": "back",
+    "face": "top",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 4.760913,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 3.131911,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 4.711905,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "back",
+    "face": "top",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 4.729593,
+    "yaw_quarter": 3
+   }
+  ],
+  "closers": [],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box2"
+   }
+  ],
+  "holder_mechanisms": [
+   "flip_lid",
+   "flip_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   2,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/egg/egg_1/model.xml",
+   "objects/objaverse/orange/orange_2/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "egg",
+   "orange"
+  ],
+  "kitchen_layout": 12,
+  "kitchen_style": 6,
+  "layout_seed": 2007485934,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "placement_seed": 1805809129,
+  "show_count": false,
+  "submit_xy": [
+   0.181553,
+   -0.186185
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "flip_lid+flip_lid",
+ "style_id": 6,
+ "task": "unfamiliar_containers"
+}

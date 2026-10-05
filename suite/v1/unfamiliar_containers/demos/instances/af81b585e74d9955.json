@@ -1,0 +1,188 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 16,
+  "kitchen_style": 9,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    1
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "press_drawer",
+    "press_drawer"
+   ],
+   "holders": [
+    0,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "flip_lid",
+    "press_drawer",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [
+     "box3"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "front",
+    "left",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. An apple and a lime are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "af81b585e74d9955",
+ "layout_id": 16,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T04:22:18",
+  "registry": "internal",
+  "seed": 3004559
+ },
+ "seed": 3004559,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/greenheart_wood_grain.png",
+   "knob_rgb": [
+    0.42,
+    0.42,
+    0.45
+   ],
+   "panel_texture": "wood/light_wood_planks_2.png"
+  },
+  "bowl_xy": [
+   -0.206749,
+   -0.174005
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "left",
+    "face": "front",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "press_drawer",
+    "side": "back",
+    "yaw": 3.160934,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 4.691482,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "back",
+    "face": "left",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "press_drawer",
+    "side": "right",
+    "yaw": 3.165941,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 1.599174,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [
+   1
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box3"
+   }
+  ],
+  "holder_mechanisms": [
+   "press_drawer",
+   "press_drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/apple/apple_1/model.xml",
+   "objects/objaverse/lime/lime_1/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "apple",
+   "lime"
+  ],
+  "kitchen_layout": 16,
+  "kitchen_style": 9,
+  "layout_seed": 10273647,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   1,
+   2,
+   0,
+   3
+  ],
+  "placement_seed": 425286216,
+  "show_count": true,
+  "submit_xy": [
+   0.175522,
+   -0.186847
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "press_drawer+press_drawer",
+ "style_id": 9,
+ "task": "unfamiliar_containers"
+}

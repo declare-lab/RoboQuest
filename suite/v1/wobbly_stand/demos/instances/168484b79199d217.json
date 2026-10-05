@@ -1,0 +1,140 @@
+{
+ "contract_version": "wobbly-stand-kitchen-v2",
+ "factors": {
+  "delta_mm": 10,
+  "kitchen_layout": 20,
+  "kitchen_style": 4,
+  "size": "one_leg_one_shim"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "checks": {
+    "exact_is_a_level_assignment": true,
+    "exact_shims_level": true,
+    "hanging_foot_as_expected": true,
+    "spec_valid": true,
+    "unshimmed_not_marginal": true,
+    "unshimmed_tilts": true,
+    "wrong_legs_not_level": true,
+    "wrong_thickness_not_level": true
+   },
+   "exact_tilt_deg": 0.0,
+   "front_edge_clearance_m": 0.16761522845443275,
+   "geometric_tilt_deg": 3.6780515862267267,
+   "hanging_mm": {
+    "ne": 9.979402655783312
+   },
+   "level_assignments": [
+    {
+     "tilt_deg": 0.0,
+     "under": {
+      "sw": 10.0
+     }
+    }
+   ],
+   "problems": [],
+   "size": "one_leg_one_shim",
+   "size_plan": {
+    "axes": "two",
+    "plate_count": 1,
+    "shim_set": "exact",
+    "short_leg_count": 1
+   },
+   "support": [
+    "sw",
+    "se",
+    "nw"
+   ],
+   "wrong_leg": {
+    "coplanar": true,
+    "tilt_deg": 3.6780515862267267,
+    "under": {
+     "ne": 10.0
+    }
+   },
+   "wrong_single": [],
+   "wrong_single_min_tilt_deg": null
+  }
+ },
+ "generator_version": "v2",
+ "goal": "The stand is not level. Use the shims to level it so the ball stays still on top, then press Submit.",
+ "instance_id": "168484b79199d217",
+ "layout_id": 20,
+ "origin": {
+  "cell": {
+   "delta_mm": 10,
+   "size": "one_leg_one_shim"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-23T23:59:48",
+  "registry": "internal",
+  "seed": 3100025
+ },
+ "seed": 3100025,
+ "spec": {
+  "ball": {
+   "colour": "green"
+  },
+  "contract_version": "wobbly-stand-kitchen-v2",
+  "delta_mm": 10,
+  "helpers": [
+   {
+    "asset": "objaverse/bowl/bowl_8",
+    "kind": "bowl",
+    "scale": 1.0,
+    "xy": [
+     0.4351739637559784,
+     0.023515281603988025
+    ],
+    "yaw": 150.45225578046774
+   }
+  ],
+  "materials": {
+   "shim_wood": "light_wood_planks_2",
+   "stand_wood": "wood_grain_1"
+  },
+  "placement": {
+   "park": [
+    0.18,
+    -0.1
+   ],
+   "submit": [
+    0.4,
+    -0.17
+   ]
+  },
+  "plates_mm": [
+   10
+  ],
+  "shims": [
+   {
+    "name": "shim_0",
+    "thickness_mm": 10,
+    "xy": [
+     0.34822520067462975,
+     0.17948920621440115
+    ],
+    "yaw_deg": -3.5470075008769584
+   }
+  ],
+  "short_legs": [
+   "sw"
+  ],
+  "show_count": false,
+  "size": "one_leg_one_shim",
+  "stand": {
+   "xy": [
+    -0.2089790538314579,
+    0.0022904537319921765
+   ],
+   "yaw_deg": -13.485394073450665
+  },
+  "stand_front_clearance_m": 0.16761522845443275
+ },
+ "split": "dev",
+ "split_key": "one_leg_one_shim-d10",
+ "style_id": 4,
+ "task": "wobbly_stand"
+}

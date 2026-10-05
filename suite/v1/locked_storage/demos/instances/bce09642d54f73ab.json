@@ -1,0 +1,132 @@
+{
+ "contract_version": "locked-storage-kitchen-v2",
+ "factors": {
+  "chain_depth": 2,
+  "dead_end": 1,
+  "double_door": false,
+  "kitchen_layout": 31,
+  "kitchen_style": 10
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity_layout": 31,
+   "chain_depth": 2,
+   "chain_kinds": [
+    "drawer",
+    "drawer"
+   ],
+   "dead_end": 1,
+   "dead_end_kind": "drawer",
+   "double_door": false,
+   "lock_colours": [
+    "cyan",
+    "magenta",
+    "orange"
+   ],
+   "problems": [],
+   "rules": {
+    "bottom_drawers": false,
+    "counter_band": {
+     "island_any": true,
+     "wall_front_fraction": 0.6666666666666666
+    },
+    "door_class": "HingeCabinet",
+    "door_target_depth_m": 0.1,
+    "door_target_depth_max_m": 0.2,
+    "floor_min_m": 0.4,
+    "single_cabinets": false
+   },
+   "split_key": "d2-drawers-cyan+magenta+orange",
+   "target_depth_m": null
+  }
+ },
+ "generator_version": "v3",
+ "goal": "Collect the blue mug on the tray, then press Submit. It may be anywhere in this kitchen; some compartments may not open, and a compartment with a coloured lock plate opens only while the token of that colour rests on its reader pad. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "bce09642d54f73ab",
+ "layout_id": 31,
+ "origin": {
+  "cell": {
+   "chain_depth": 2,
+   "dead_end": 1,
+   "double_door": false
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T10:04:41",
+  "registry": "internal",
+  "seed": 3601775
+ },
+ "seed": 3601775,
+ "spec": {
+  "build_seed": 446731363,
+  "chain_depth": 2,
+  "chain_kinds": [
+   "drawer",
+   "drawer"
+  ],
+  "closer_count": 0,
+  "closer_seed": 1565206709,
+  "compartment_count": 6,
+  "contract_version": "locked-storage-kitchen-v2",
+  "dead_end": 1,
+  "dead_end_kind": "drawer",
+  "dead_end_token": "open",
+  "double_door": false,
+  "hidden_distractors": [
+   "mug_red"
+  ],
+  "layout_id": 31,
+  "lock_colours": [
+   "cyan",
+   "magenta",
+   "orange"
+  ],
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1887760553,
+  "rules": {
+   "bottom_drawers": false,
+   "counter_band": {
+    "island_any": true,
+    "wall_front_fraction": 0.6666666666666666
+   },
+   "door_class": "HingeCabinet",
+   "door_target_depth_m": 0.1,
+   "door_target_depth_max_m": 0.2,
+   "floor_min_m": 0.4,
+   "single_cabinets": false
+  },
+  "set_size": 1,
+  "show_count": true,
+  "target_depth_m": null,
+  "targets": [
+   {
+    "kind": "drawer",
+    "object": "mug_blue"
+   }
+  ],
+  "token_seed": 1272112052,
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "bottle_yellow",
+   "can_green",
+   "can_red",
+   "tin_green",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "d2-drawers-cyan+magenta+orange",
+ "style_id": 10,
+ "task": "locked_storage"
+}

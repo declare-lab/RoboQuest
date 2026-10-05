@@ -1,0 +1,187 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 1,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    0
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "drawer",
+    "flip_lid"
+   ],
+   "holders": [
+    1,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "drawer",
+    "flip_lid",
+    "lift_lid",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [
+     "box0"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "front",
+    "left",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. A tomato and an egg are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "1df7e04c73b3ac83",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-24T23:54:14",
+  "registry": "internal",
+  "seed": 3001486
+ },
+ "seed": 3001486,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/red_wood_planks.png",
+   "knob_rgb": [
+    0.72,
+    0.73,
+    0.75
+   ],
+   "panel_texture": "wood/light_wood_parquet.png"
+  },
+  "bowl_xy": [
+   -0.192796,
+   -0.176479
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 4.687289,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "left",
+    "face": "left",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "drawer",
+    "side": "front",
+    "yaw": 1.609163,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 3.091843,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "left",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 1.540405,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [
+   0
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box0"
+   }
+  ],
+  "holder_mechanisms": [
+   "drawer",
+   "flip_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   1,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/tomato/tomato_0/model.xml",
+   "objects/objaverse/egg/egg_1/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "tomato",
+   "egg"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 1,
+  "layout_seed": 1336005561,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   3,
+   0,
+   2,
+   1
+  ],
+  "placement_seed": 450426360,
+  "show_count": true,
+  "submit_xy": [
+   0.181607,
+   -0.188795
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "drawer+flip_lid",
+ "style_id": 1,
+ "task": "unfamiliar_containers"
+}

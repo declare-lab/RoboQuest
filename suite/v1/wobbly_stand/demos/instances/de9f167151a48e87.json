@@ -1,0 +1,215 @@
+{
+ "contract_version": "wobbly-stand-kitchen-v2",
+ "factors": {
+  "delta_mm": 5,
+  "kitchen_layout": 33,
+  "kitchen_style": 8,
+  "size": "two_legs_all_shims"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "checks": {
+    "exact_is_a_level_assignment": true,
+    "exact_shims_level": true,
+    "hanging_foot_as_expected": true,
+    "spec_valid": true,
+    "unshimmed_not_marginal": true,
+    "unshimmed_tilts": true,
+    "wrong_legs_not_level": true,
+    "wrong_thickness_not_level": true
+   },
+   "exact_tilt_deg": 0.0,
+   "front_edge_clearance_m": 0.21597111072937575,
+   "geometric_tilt_deg": 1.3019526725790032,
+   "hanging_mm": {},
+   "level_assignments": [
+    {
+     "tilt_deg": 0.0,
+     "under": {
+      "se": 5.0,
+      "sw": 5.0
+     }
+    }
+   ],
+   "problems": [],
+   "size": "two_legs_all_shims",
+   "size_plan": {
+    "axes": "one",
+    "plate_count": 4,
+    "shim_set": "mixed",
+    "short_leg_count": 2
+   },
+   "support": [
+    "sw",
+    "se",
+    "ne",
+    "nw"
+   ],
+   "wrong_leg": {
+    "coplanar": true,
+    "tilt_deg": 2.6025622024999433,
+    "under": {
+     "ne": 5.0,
+     "nw": 5.0
+    }
+   },
+   "wrong_single": [
+    {
+     "tilt_deg": 2.6025622024999433,
+     "under": {
+      "se": 5.0,
+      "sw": 15.0
+     }
+    },
+    {
+     "tilt_deg": 1.8409223493426259,
+     "under": {
+      "se": 10.0,
+      "sw": 15.0
+     }
+    },
+    {
+     "tilt_deg": 2.6025622024999433,
+     "under": {
+      "se": 15.0,
+      "sw": 5.0
+     }
+    },
+    {
+     "tilt_deg": 1.3019526725790032,
+     "under": {
+      "se": 10.0,
+      "sw": 5.0
+     }
+    },
+    {
+     "tilt_deg": 1.8409223493426259,
+     "under": {
+      "se": 15.0,
+      "sw": 10.0
+     }
+    },
+    {
+     "tilt_deg": 1.3019526725790032,
+     "under": {
+      "se": 5.0,
+      "sw": 10.0
+     }
+    }
+   ],
+   "wrong_single_min_tilt_deg": 1.3019526725790032
+  }
+ },
+ "generator_version": "v2",
+ "goal": "The stand is not level. Use the shims to level it so the ball stays still on top, then press Submit.",
+ "instance_id": "de9f167151a48e87",
+ "layout_id": 33,
+ "origin": {
+  "cell": {
+   "delta_mm": 5,
+   "size": "two_legs_all_shims"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T04:16:49",
+  "registry": "internal",
+  "seed": 3500154
+ },
+ "seed": 3500154,
+ "spec": {
+  "ball": {
+   "colour": "green"
+  },
+  "contract_version": "wobbly-stand-kitchen-v2",
+  "delta_mm": 5,
+  "helpers": [
+   {
+    "asset": "objaverse/tray/tray_2",
+    "kind": "tray",
+    "scale": 0.8,
+    "xy": [
+     0.37178337325803346,
+     0.017525504749299037
+    ],
+    "yaw": 50.03113826013029
+   }
+  ],
+  "materials": {
+   "shim_wood": "light_wood_planks_2",
+   "stand_wood": "walnut_wood_grain"
+  },
+  "placement": {
+   "park": [
+    0.18,
+    -0.1
+   ],
+   "submit": [
+    0.4,
+    -0.17
+   ]
+  },
+  "plates_mm": [
+   15,
+   5,
+   5,
+   10
+  ],
+  "shims": [
+   {
+    "name": "shim_0",
+    "thickness_mm": 15,
+    "xy": [
+     0.01895550181800596,
+     0.16059954946915553
+    ],
+    "yaw_deg": 22.892413771192345
+   },
+   {
+    "name": "shim_1",
+    "thickness_mm": 5,
+    "xy": [
+     0.34590309590323687,
+     0.17227519852169626
+    ],
+    "yaw_deg": -20.406468469532264
+   },
+   {
+    "name": "shim_2",
+    "thickness_mm": 5,
+    "xy": [
+     0.1328240021644572,
+     0.17140384595860247
+    ],
+    "yaw_deg": 2.1650811039366396
+   },
+   {
+    "name": "shim_3",
+    "thickness_mm": 10,
+    "xy": [
+     0.24609208050373252,
+     0.17403771965886655
+    ],
+    "yaw_deg": 13.766337978392052
+   }
+  ],
+  "short_legs": [
+   "sw",
+   "se"
+  ],
+  "show_count": false,
+  "size": "two_legs_all_shims",
+  "stand": {
+   "xy": [
+    -0.21416657319791008,
+    0.03694082278097681
+   ],
+   "yaw_deg": -5.510976748487748
+  },
+  "stand_front_clearance_m": 0.21597111072937575
+ },
+ "split": "dev",
+ "split_key": "two_legs_all_shims-d5",
+ "style_id": 8,
+ "task": "wobbly_stand"
+}

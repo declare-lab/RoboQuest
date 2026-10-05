@@ -1,0 +1,219 @@
+{
+ "contract_version": "marked-mugs-kitchen-v3",
+ "factors": {
+  "kitchen_layout": 19,
+  "kitchen_style": 3,
+  "observability": "visible",
+  "vessel_count": 5
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "fixed_points": 2,
+   "helper_count": 1,
+   "helpers": [
+    "objaverse/bowl/bowl_1"
+   ],
+   "helpers_short": 0,
+   "helpers_wanted": 1,
+   "min_footprint_margin_m": 0.00388,
+   "min_helper_gap_m": 0.02735,
+   "min_pad_gap_m": 0.01776,
+   "min_submit_clearance_m": 0.04314,
+   "min_vessel_gap_m": 0.02195,
+   "min_vessel_pad_gap_m": 0.04289,
+   "min_vessel_region_margin_m": 0.00378,
+   "pad_placement_tolerance_m": [
+    0.0405,
+    0.023
+   ],
+   "pad_row_fit": {
+    "count": 5,
+    "fits": true,
+    "fits_with_jitter": true,
+    "frame_width_m": 1.0,
+    "jitter_needed_m": 0.06,
+    "pad_extent_x_m": 0.08964,
+    "pad_half_xy_m": [
+     0.08,
+     0.0625
+    ],
+    "row_width_at_zero_yaw_m": 0.824,
+    "row_width_m": 0.92038,
+    "slack_at_zero_yaw_m": 0.176,
+    "slack_m": 0.07962,
+    "yaw_deg": 10.0
+   },
+   "problems": [],
+   "split_key": "v5-f1+",
+   "vessel": "mug",
+   "vessel_front_margin_m": 0.07378,
+   "vessel_radius_m": 0.0575
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 5 mugs on the counters in this kitchen. Each one has a coloured label on its bottom. Put every one upright on the pad of the same colour, with its own two balls inside, then press Submit. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "dcb19a54f9e9183f",
+ "layout_id": 19,
+ "origin": {
+  "cell": {
+   "observability": "visible",
+   "vessel_count": 5
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-24T21:28:55",
+  "registry": "internal",
+  "seed": 4100534
+ },
+ "seed": 4100534,
+ "spec": {
+  "ball_colors": [
+   [
+    "black",
+    "red"
+   ],
+   [
+    "yellow",
+    "blue"
+   ],
+   [
+    "white",
+    "green"
+   ],
+   [
+    "cyan",
+    "magenta"
+   ],
+   [
+    "orange",
+    "violet"
+   ]
+  ],
+  "contract_version": "marked-mugs-kitchen-v3",
+  "fixed_points": 2,
+  "footprint": [
+   1.0,
+   0.62
+  ],
+  "helpers": [
+   {
+    "asset": "objaverse/bowl/bowl_1",
+    "kind": "bowl",
+    "scale": 1.0,
+    "xy": [
+     -0.07021714081870267,
+     -0.08824273864238213
+    ],
+    "yaw": -157.0826700961446
+   }
+  ],
+  "helpers_short": 0,
+  "helpers_wanted": 1,
+  "hidden": [],
+  "hidden_plan": {
+   "flavour_drawn": null,
+   "flavour_fallback": false,
+   "look": [],
+   "object_candidates": [],
+   "place_candidates": [],
+   "rescatter": null,
+   "uncover_flavour": null
+  },
+  "labels": [
+   "green",
+   "red",
+   "blue",
+   "yellow",
+   "purple"
+  ],
+  "nearest_pad": [
+   1,
+   2,
+   4,
+   0,
+   3
+  ],
+  "observability": "visible",
+  "pad_colors": [
+   "purple",
+   "green",
+   "yellow",
+   "red",
+   "blue"
+  ],
+  "pad_xy": [
+   [
+    -0.388271,
+    0.128948
+   ],
+   [
+    -0.191059,
+    0.125779
+   ],
+   [
+    0.017043,
+    0.1124
+   ],
+   [
+    0.226634,
+    0.152169
+   ],
+   [
+    0.409058,
+    0.145385
+   ]
+  ],
+  "pad_yaw": [
+   0.031354,
+   0.036575,
+   -0.003501,
+   0.163373,
+   0.123004
+  ],
+  "physics_timestep_s": 0.001,
+  "placement": {
+   "submit": [
+    0.4,
+    -0.25
+   ]
+  },
+  "show_count": true,
+  "vessel": "mug",
+  "vessel_color": "sand",
+  "vessel_count": 5,
+  "vessel_xy": [
+   [
+    -0.212043,
+    -0.139772
+   ],
+   [
+    0.074521,
+    -0.082473
+   ],
+   [
+    0.324512,
+    -0.110185
+   ],
+   [
+    -0.300171,
+    -0.034946
+   ],
+   [
+    0.182433,
+    -0.178725
+   ]
+  ],
+  "vessel_yaw": [
+   -0.437694,
+   -0.826738,
+   -1.312465,
+   1.963196,
+   2.73161
+  ]
+ },
+ "split": "dev",
+ "split_key": "v5-f1+",
+ "style_id": 3,
+ "task": "marked_mugs"
+}

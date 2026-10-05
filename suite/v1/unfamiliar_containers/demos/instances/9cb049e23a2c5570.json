@@ -1,0 +1,202 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 12,
+  "kitchen_style": 1,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closer_windows": {
+    "3": 253
+   },
+   "closers": [
+    3
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "press_drawer",
+    "flip_lid"
+   ],
+   "holders": [
+    0,
+    1
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "door",
+    "flip_lid",
+    "lift_lid",
+    "press_drawer"
+   ],
+   "observability": {
+    "hidden": [
+     "box0"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "left",
+    "right",
+    "top"
+   ]
+  },
+  "scene": {
+   "build_and_clear_access_preflight": true,
+   "closer_rule": true,
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (GPUs in use; EGL not touched)",
+   "g35": true
+  }
+ },
+ "generator_version": "v6",
+ "goal": "There are boxes on the counters in this kitchen. An apple and a peach are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "9cb049e23a2c5570",
+ "layout_id": 12,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T18:08:53",
+  "note": "2026-10-04 layouts 12/20 batch b",
+  "registry": "internal",
+  "seed": 7135605,
+  "staging": "internal"
+ },
+ "seed": 7135605,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/light_wood_planks.png",
+   "knob_rgb": [
+    0.6,
+    0.6,
+    0.62
+   ],
+   "panel_texture": "wood/red_wood_planks.png"
+  },
+  "bowl_xy": [
+   -0.207007,
+   -0.16681
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "left",
+    "face": "front",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "press_drawer",
+    "side": "back",
+    "yaw": 3.133496,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 4.696936,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 1.518623,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "right",
+    "face": "right",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "door",
+    "side": "back",
+    "yaw": 1.579565,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [
+   3
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box0"
+   }
+  ],
+  "holder_mechanisms": [
+   "press_drawer",
+   "flip_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   1
+  ],
+  "item_assets": [
+   "objects/objaverse/apple/apple_1/model.xml",
+   "objects/objaverse/peach/peach_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "apple",
+   "peach"
+  ],
+  "kitchen_layout": 12,
+  "kitchen_style": 1,
+  "layout_seed": 925578438,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   2,
+   3,
+   0,
+   1
+  ],
+  "placement_seed": 810585096,
+  "show_count": false,
+  "submit_xy": [
+   0.176831,
+   -0.182131
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "flip_lid+press_drawer",
+ "style_id": 1,
+ "task": "unfamiliar_containers"
+}

@@ -1,0 +1,103 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 58,
+  "kitchen_style": 7,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 13,
+    "doors": {
+     "240": 1,
+     "305": 1,
+     "403": 1
+    },
+    "drawers": {
+     "160": 4,
+     "202": 1
+    },
+    "free": 56,
+    "open": 24
+   },
+   "capacity_layout": 58,
+   "closers": [
+    2
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the red mug and the blue mug on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "9caf12408e660692",
+ "layout_id": 58,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T13:18:43",
+  "registry": "internal",
+  "seed": 4001007
+ },
+ "seed": 4001007,
+ "spec": {
+  "build_seed": 224366144,
+  "closers": [
+   2
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1699460405,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_blue",
+   "can_red"
+  ],
+  "layout_id": 58,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1645138387,
+  "set_size": 2,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "mug_red"
+   },
+   {
+    "kind": "open",
+    "object": "mug_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_yellow",
+   "can_green",
+   "tin_green",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-open+open",
+ "style_id": 7,
+ "task": "search_room"
+}

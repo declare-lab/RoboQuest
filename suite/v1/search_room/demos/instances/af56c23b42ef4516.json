@@ -1,0 +1,105 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 50,
+  "kitchen_style": 9,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 19,
+    "doors": {
+     "305": 1
+    },
+    "drawers": {
+     "160": 8,
+     "202": 1
+    },
+    "free": 98,
+    "open": 36
+   },
+   "capacity_layout": 50,
+   "closers": [
+    1
+   ],
+   "hidden_compartments_needed": 3,
+   "problems": [],
+   "target_kinds": [
+    "drawer",
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the yellow tin, the yellow water bottle and the blue water bottle on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "af56c23b42ef4516",
+ "layout_id": 50,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T10:42:19",
+  "registry": "internal",
+  "seed": 4100242
+ },
+ "seed": 4100242,
+ "spec": {
+  "build_seed": 1085971861,
+  "closers": [
+   1
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1658650203,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "mug_blue",
+   "tin_green"
+  ],
+  "layout_id": 50,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 744982990,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "drawer",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "can_green",
+   "can_red",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-drawer+open+open",
+ "style_id": 9,
+ "task": "search_room"
+}

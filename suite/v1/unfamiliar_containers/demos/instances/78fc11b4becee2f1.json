@@ -1,0 +1,177 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 16,
+  "kitchen_style": 6,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    0
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "drawer",
+    "drawer"
+   ],
+   "holders": [
+    1,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "drawer",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "front",
+    "left",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are boxes on the counters in this kitchen. A peach and a kiwi are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "78fc11b4becee2f1",
+ "layout_id": 16,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T11:13:31",
+  "registry": "internal",
+  "seed": 3106113
+ },
+ "seed": 3106113,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/warm_wood_parquet.png",
+   "knob_rgb": [
+    0.42,
+    0.42,
+    0.45
+   ],
+   "panel_texture": "wood/warm_wood_grain.png"
+  },
+  "bowl_xy": [
+   -0.206967,
+   -0.164288
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "right",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 4.676272,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "right",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "drawer",
+    "side": "left",
+    "yaw": 3.125486,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "back",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "drawer",
+    "side": "front",
+    "yaw": 3.09215,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 1.536136,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [
+   0
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "drawer",
+   "drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   1,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/peach/peach_0/model.xml",
+   "objects/objaverse/kiwi/kiwi_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "peach",
+   "kiwi"
+  ],
+  "kitchen_layout": 16,
+  "kitchen_style": 6,
+  "layout_seed": 1737279845,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   2,
+   0,
+   3,
+   1
+  ],
+  "placement_seed": 342756498,
+  "show_count": false,
+  "submit_xy": [
+   0.182046,
+   -0.191852
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "drawer+drawer",
+ "style_id": 6,
+ "task": "unfamiliar_containers"
+}

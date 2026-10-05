@@ -1,0 +1,197 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 12,
+  "kitchen_style": 8,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closer_windows": {
+    "1": 256
+   },
+   "closers": [
+    1
+   ],
+   "decoys": [
+    3
+   ],
+   "holder_mechanisms": [
+    "slide_side",
+    "slide_side"
+   ],
+   "holders": [
+    0,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "sealed",
+    "slide_lid",
+    "slide_side"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "front",
+    "right",
+    "top"
+   ]
+  },
+  "scene": {
+   "build_and_clear_access_preflight": true,
+   "closer_rule": true,
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (GPUs in use; EGL not touched)",
+   "g35": true
+  }
+ },
+ "generator_version": "v6",
+ "goal": "There are boxes on the counters in this kitchen. An apple and an orange are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "072e261c06415cec",
+ "layout_id": 12,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T18:08:52",
+  "note": "2026-10-04 layouts 12/20 batch b",
+  "registry": "internal",
+  "seed": 7130729,
+  "staging": "internal"
+ },
+ "seed": 7130729,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/light_wood_planks_long.png",
+   "knob_rgb": [
+    0.12,
+    0.12,
+    0.13
+   ],
+   "panel_texture": "wood/dark_wood_parquet.png"
+  },
+  "bowl_xy": [
+   -0.195669,
+   -0.168281
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "front",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "slide_side",
+    "side": "back",
+    "yaw": 3.196136,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "right",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 0.04338,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "left",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "slide_side",
+    "side": "front",
+    "yaw": 1.559944,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "sealed",
+    "side": "top",
+    "yaw": 3.128342,
+    "yaw_quarter": 2
+   }
+  ],
+  "closers": [
+   1
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   3
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "slide_side",
+   "slide_side"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/apple/apple_1/model.xml",
+   "objects/objaverse/orange/orange_2/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "apple",
+   "orange"
+  ],
+  "kitchen_layout": 12,
+  "kitchen_style": 8,
+  "layout_seed": 1505930428,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   1,
+   3,
+   0,
+   2
+  ],
+  "placement_seed": 481402441,
+  "show_count": false,
+  "submit_xy": [
+   0.174088,
+   -0.190354
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "slide_side+slide_side",
+ "style_id": 8,
+ "task": "unfamiliar_containers"
+}

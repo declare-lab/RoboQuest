@@ -1,0 +1,198 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 12,
+  "kitchen_style": 3,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closer_windows": {
+    "0": 253
+   },
+   "closers": [
+    0
+   ],
+   "decoys": [
+    1
+   ],
+   "holder_mechanisms": [
+    "flip_lid",
+    "slide_side"
+   ],
+   "holders": [
+    2,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "flip_lid",
+    "press_door",
+    "sealed",
+    "slide_side"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "front",
+    "left",
+    "right",
+    "top"
+   ]
+  },
+  "scene": {
+   "build_and_clear_access_preflight": true,
+   "closer_rule": true,
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (GPUs in use; EGL not touched)",
+   "g35": true
+  }
+ },
+ "generator_version": "v6",
+ "goal": "There are 4 boxes on the counters in this kitchen. A tomato and an orange are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "b305dfdc4ac55f5a",
+ "layout_id": 12,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T18:08:52",
+  "note": "2026-10-04 layouts 12/20 batch b",
+  "registry": "internal",
+  "seed": 7130488,
+  "staging": "internal"
+ },
+ "seed": 7130488,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/wood_planks.png",
+   "knob_rgb": [
+    0.6,
+    0.6,
+    0.62
+   ],
+   "panel_texture": "wood/dark_wood_parquet.png"
+  },
+  "bowl_xy": [
+   -0.20042,
+   -0.169495
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "left",
+    "face": "left",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "press_door",
+    "side": "front",
+    "yaw": 1.537259,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "back",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "sealed",
+    "side": "left",
+    "yaw": 1.627185,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 3.094257,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "left",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "slide_side",
+    "side": "left",
+    "yaw": -0.051605,
+    "yaw_quarter": 0
+   }
+  ],
+  "closers": [
+   0
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   1
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "flip_lid",
+   "slide_side"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   2,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/tomato/tomato_0/model.xml",
+   "objects/objaverse/orange/orange_2/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "tomato",
+   "orange"
+  ],
+  "kitchen_layout": 12,
+  "kitchen_style": 3,
+  "layout_seed": 1424518474,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   1,
+   2,
+   0,
+   3
+  ],
+  "placement_seed": 1848888811,
+  "show_count": true,
+  "submit_xy": [
+   0.172417,
+   -0.18273
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "flip_lid+slide_side",
+ "style_id": 3,
+ "task": "unfamiliar_containers"
+}

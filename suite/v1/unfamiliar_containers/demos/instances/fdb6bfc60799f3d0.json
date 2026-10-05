@@ -1,0 +1,183 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 2,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [],
+   "decoys": [],
+   "holder_mechanisms": [
+    "press_drawer",
+    "drawer"
+   ],
+   "holders": [
+    0,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "drawer",
+    "press_drawer"
+   ],
+   "observability": {
+    "hidden": [
+     "box0"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "front",
+    "left",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. A peach and an orange are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "fdb6bfc60799f3d0",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T17:40:22",
+  "registry": "internal",
+  "seed": 3015982
+ },
+ "seed": 3015982,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/warm_wood_parquet.png",
+   "knob_rgb": [
+    0.42,
+    0.42,
+    0.45
+   ],
+   "panel_texture": "wood/varnished_wood_planks.png"
+  },
+  "bowl_xy": [
+   -0.206603,
+   -0.16971
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "left",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "press_drawer",
+    "side": "right",
+    "yaw": 3.103576,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "front",
+    "face": "right",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "press_drawer",
+    "side": "right",
+    "yaw": 0.036211,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "back",
+    "face": "left",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "press_drawer",
+    "side": "right",
+    "yaw": 3.122813,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "left",
+    "face": "back",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "drawer",
+    "side": "back",
+    "yaw": -0.038878,
+    "yaw_quarter": 0
+   }
+  ],
+  "closers": [],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box0"
+   }
+  ],
+  "holder_mechanisms": [
+   "press_drawer",
+   "drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/peach/peach_0/model.xml",
+   "objects/objaverse/orange/orange_2/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "peach",
+   "orange"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 2,
+  "layout_seed": 442312555,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   3,
+   0,
+   1,
+   2
+  ],
+  "placement_seed": 680362119,
+  "show_count": true,
+  "submit_xy": [
+   0.172865,
+   -0.191133
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "drawer+press_drawer",
+ "style_id": 2,
+ "task": "unfamiliar_containers"
+}

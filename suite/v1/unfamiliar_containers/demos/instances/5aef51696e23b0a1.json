@@ -1,0 +1,190 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 4,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    1
+   ],
+   "decoys": [
+    2
+   ],
+   "holder_mechanisms": [
+    "slide_lid",
+    "press_drawer"
+   ],
+   "holders": [
+    0,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "press_drawer",
+    "sealed",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [
+     "box3"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "front",
+    "left",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are boxes on the counters in this kitchen. An orange and a kiwi are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "5aef51696e23b0a1",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T11:01:49",
+  "registry": "internal",
+  "seed": 3009737
+ },
+ "seed": 3009737,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/gray_wood_grain.png",
+   "knob_rgb": [
+    0.12,
+    0.12,
+    0.13
+   ],
+   "panel_texture": "wood/walnut_wood_grain.png"
+  },
+  "bowl_xy": [
+   -0.197426,
+   -0.172149
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 3.200707,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 0.051105,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "sealed",
+    "side": "top",
+    "yaw": 3.198519,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "right",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "press_drawer",
+    "side": "left",
+    "yaw": 3.13144,
+    "yaw_quarter": 2
+   }
+  ],
+  "closers": [
+   1
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   2
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box3"
+   }
+  ],
+  "holder_mechanisms": [
+   "slide_lid",
+   "press_drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/orange/orange_2/model.xml",
+   "objects/objaverse/kiwi/kiwi_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "orange",
+   "kiwi"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 4,
+  "layout_seed": 994952252,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   3,
+   1,
+   2,
+   0
+  ],
+  "placement_seed": 1591248356,
+  "show_count": false,
+  "submit_xy": [
+   0.181877,
+   -0.189338
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "press_drawer+slide_lid",
+ "style_id": 4,
+ "task": "unfamiliar_containers"
+}

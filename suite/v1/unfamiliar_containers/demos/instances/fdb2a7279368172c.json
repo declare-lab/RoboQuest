@@ -1,0 +1,191 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 4,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    3
+   ],
+   "decoys": [
+    2
+   ],
+   "holder_mechanisms": [
+    "flip_lid",
+    "press_drawer"
+   ],
+   "holders": [
+    0,
+    1
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "flip_lid",
+    "press_drawer",
+    "sealed",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [
+     "box3"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "left",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are boxes on the counters in this kitchen. An apple and a tomato are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "fdb2a7279368172c",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T07:03:28",
+  "registry": "internal",
+  "seed": 3005731
+ },
+ "seed": 3005731,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/dark_wood_planks_2.png",
+   "knob_rgb": [
+    0.6,
+    0.6,
+    0.62
+   ],
+   "panel_texture": "wood/walnut_wood_grain.png"
+  },
+  "bowl_xy": [
+   -0.200854,
+   -0.173124
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 3.083727,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "left",
+    "dummy_side": "left",
+    "face": "back",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "press_drawer",
+    "side": "back",
+    "yaw": -0.001114,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "back",
+    "face": "top",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "sealed",
+    "side": "top",
+    "yaw": 4.77064,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 3.119574,
+    "yaw_quarter": 2
+   }
+  ],
+  "closers": [
+   3
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   2
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box3"
+   }
+  ],
+  "holder_mechanisms": [
+   "flip_lid",
+   "press_drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   1
+  ],
+  "item_assets": [
+   "objects/objaverse/apple/apple_1/model.xml",
+   "objects/objaverse/tomato/tomato_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "apple",
+   "tomato"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 4,
+  "layout_seed": 1714602503,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   2,
+   3,
+   1,
+   0
+  ],
+  "placement_seed": 469869489,
+  "show_count": false,
+  "submit_xy": [
+   0.176297,
+   -0.197737
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "flip_lid+press_drawer",
+ "style_id": 4,
+ "task": "unfamiliar_containers"
+}

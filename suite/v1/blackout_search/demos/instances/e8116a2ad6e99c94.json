@@ -1,0 +1,134 @@
+{
+ "contract_version": "blackout-search-kitchen-v2",
+ "factors": {
+  "compartment_count": 6,
+  "kitchen_layout": 18,
+  "kitchen_style": 8,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 9,
+    "doors": {
+     "240": 7,
+     "432": 1
+    },
+    "drawers": {
+     "185": 11
+    },
+    "free": 74,
+    "open": 21
+   },
+   "capacity_layout": 18,
+   "closers": [],
+   "hidden_compartments_needed": 2,
+   "hiding_rule": {
+    "doors": false,
+    "floor_min_m": 0.4,
+    "kinds": [
+     "drawer",
+     "open",
+     "covered"
+    ]
+   },
+   "high_drawers": {
+    "185": 5
+   },
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open"
+   ]
+  },
+  "scene": {
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 2.0,
+   "g3": "not run (GPUs returned to their owner)",
+   "g35": true,
+   "g3_note": ""
+  }
+ },
+ "generator_version": "v3",
+ "goal": "The kitchen is dark. Collect the yellow water bottle and the green tin on the tray, then press Submit. They may be anywhere in this kitchen; some compartments may not open. A lantern with a glowing glass stands on a counter. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "e8116a2ad6e99c94",
+ "layout_id": 18,
+ "origin": {
+  "cell": {
+   "compartment_count": 6,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-05T01:03:14",
+  "note": "2026-10-05 dark fresh (crawl-d copy)",
+  "registry": "internal",
+  "seed": 5810102,
+  "staging": "internal"
+ },
+ "seed": 5810102,
+ "spec": {
+  "build_seed": 481483525,
+  "closers": [],
+  "compartment_count": 6,
+  "contract_version": "blackout-search-kitchen-v2",
+  "counter_band": {
+   "front_fraction": 0.6667,
+   "islands": "anywhere",
+   "wall_backed_only": true
+  },
+  "cover_seed": 1463833673,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "can_green",
+   "tin_yellow"
+  ],
+  "hiding": {
+   "doors": false,
+   "floor_min_m": 0.4,
+   "kinds": [
+    "drawer",
+    "open",
+    "covered"
+   ]
+  },
+  "lamp_seed": 457561100,
+  "layout_id": 18,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1720716076,
+  "set_size": 2,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "tin_green"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "can_red",
+   "mug_blue",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-open+open",
+ "style_id": 8,
+ "task": "blackout_search"
+}

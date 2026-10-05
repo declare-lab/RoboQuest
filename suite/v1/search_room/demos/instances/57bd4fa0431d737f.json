@@ -1,0 +1,104 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 59,
+  "kitchen_style": 3,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 19,
+    "doors": {
+     "305": 1
+    },
+    "drawers": {
+     "160": 5
+    },
+    "free": 70,
+    "open": 30
+   },
+   "capacity_layout": 59,
+   "closers": [
+    3
+   ],
+   "hidden_compartments_needed": 3,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "drawer",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the green tin, the yellow tin and the green can on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "57bd4fa0431d737f",
+ "layout_id": 59,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T10:31:57",
+  "registry": "internal",
+  "seed": 3100403
+ },
+ "seed": 3100403,
+ "spec": {
+  "build_seed": 247612646,
+  "closers": [
+   3
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 256763355,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_yellow",
+   "can_red"
+  ],
+  "layout_id": 59,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 709602169,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "tin_green"
+   },
+   {
+    "kind": "drawer",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "can_green"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "mug_blue",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-drawer+open+open",
+ "style_id": 3,
+ "task": "search_room"
+}

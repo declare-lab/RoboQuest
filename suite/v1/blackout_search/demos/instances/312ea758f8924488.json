@@ -1,0 +1,123 @@
+{
+ "contract_version": "blackout-search-kitchen-v2",
+ "factors": {
+  "compartment_count": 6,
+  "kitchen_layout": 25,
+  "kitchen_style": 8,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 23,
+    "doors": {
+     "240": 4
+    },
+    "drawers": {
+     "118": 6
+    },
+    "free": 126,
+    "open": 42
+   },
+   "capacity_layout": 25,
+   "closers": [],
+   "hidden_compartments_needed": 1,
+   "hiding_rule": {
+    "doors": false,
+    "floor_min_m": 0.4,
+    "kinds": [
+     "drawer",
+     "open",
+     "covered"
+    ]
+   },
+   "high_drawers": {
+    "118": 4
+   },
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v3",
+ "goal": "The kitchen is dark. Collect the green can and the green tin on the tray, then press Submit. They may be anywhere in this kitchen; some compartments may not open. A lantern with a glowing glass stands on a counter. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "312ea758f8924488",
+ "layout_id": 25,
+ "origin": {
+  "cell": {
+   "compartment_count": 6,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-26T03:47:57",
+  "registry": "internal",
+  "seed": 3200567
+ },
+ "seed": 3200567,
+ "spec": {
+  "build_seed": 43738579,
+  "closers": [],
+  "compartment_count": 6,
+  "contract_version": "blackout-search-kitchen-v2",
+  "counter_band": {
+   "front_fraction": 0.6667,
+   "islands": "anywhere",
+   "wall_backed_only": true
+  },
+  "cover_seed": 1877615632,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "tin_yellow"
+  ],
+  "hiding": {
+   "doors": false,
+   "floor_min_m": 0.4,
+   "kinds": [
+    "drawer",
+    "open",
+    "covered"
+   ]
+  },
+  "lamp_seed": 1398262120,
+  "layout_id": 25,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1133128946,
+  "set_size": 2,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "can_green"
+   },
+   {
+    "kind": "open",
+    "object": "tin_green"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "bottle_yellow",
+   "can_red",
+   "mug_blue",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-open+open",
+ "style_id": 8,
+ "task": "blackout_search"
+}

@@ -1,0 +1,13 @@
+# Optional provider imports pinned to the chosen Inspect Robots uv.lock.
+# Install into an isolated target; retain the existing simulator environment.
+# Installed with --no-deps, so httpx's own dependencies are listed too (the versions the evaluation ran with).
+httpx==0.28.1
+httpcore==1.0.9
+h11==0.16.0
+anyio==4.15.1
+idna==3.19
+certifi==2026.7.22
+typing_extensions==4.16.0
+websockets==16.0
+# --agent policy: openpi's WebSocket protocol is MessagePack
+msgpack==1.1.1

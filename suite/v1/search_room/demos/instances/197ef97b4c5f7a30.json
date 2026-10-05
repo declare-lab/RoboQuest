@@ -1,0 +1,109 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 43,
+  "kitchen_style": 1,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 4,
+    "doors": {
+     "240": 5,
+     "270": 1,
+     "305": 1,
+     "350": 1
+    },
+    "drawers": {
+     "160": 3,
+     "202": 2,
+     "328": 1
+    },
+    "free": 112,
+    "open": 32
+   },
+   "capacity_layout": 43,
+   "closers": [
+    2
+   ],
+   "hidden_compartments_needed": 3,
+   "problems": [],
+   "target_kinds": [
+    "drawer",
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the red mug, the yellow tin and the yellow water bottle on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "197ef97b4c5f7a30",
+ "layout_id": 43,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T11:38:02",
+  "registry": "internal",
+  "seed": 4100543
+ },
+ "seed": 4100543,
+ "spec": {
+  "build_seed": 74149396,
+  "closers": [
+   2
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1449945492,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_blue",
+   "tin_green"
+  ],
+  "layout_id": 43,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1280691844,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "drawer",
+    "object": "mug_red"
+   },
+   {
+    "kind": "open",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "can_green",
+   "can_red",
+   "mug_blue"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-drawer+open+open",
+ "style_id": 1,
+ "task": "search_room"
+}

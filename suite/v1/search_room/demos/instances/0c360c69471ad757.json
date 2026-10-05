@@ -1,0 +1,102 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 29,
+  "kitchen_style": 1,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 19,
+    "doors": {
+     "240": 3
+    },
+    "drawers": {
+     "177": 4,
+     "185": 1,
+     "194": 3
+    },
+    "free": 84,
+    "open": 36
+   },
+   "capacity_layout": 29,
+   "closers": [
+    2
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the yellow tin and the green can on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "0c360c69471ad757",
+ "layout_id": 29,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T12:20:36",
+  "registry": "internal",
+  "seed": 4000734
+ },
+ "seed": 4000734,
+ "spec": {
+  "build_seed": 492041417,
+  "closers": [
+   2
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 464522186,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_yellow",
+   "tin_green"
+  ],
+  "layout_id": 29,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1396686720,
+  "set_size": 2,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "can_green"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "can_red",
+   "mug_blue",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-open+open",
+ "style_id": 1,
+ "task": "search_room"
+}

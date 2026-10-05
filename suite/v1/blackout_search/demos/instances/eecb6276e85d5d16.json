@@ -1,0 +1,127 @@
+{
+ "contract_version": "blackout-search-kitchen-v2",
+ "factors": {
+  "compartment_count": 6,
+  "kitchen_layout": 31,
+  "kitchen_style": 3,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 20,
+    "doors": {
+     "240": 3,
+     "277": 1,
+     "330": 1
+    },
+    "drawers": {
+     "160": 4,
+     "202": 5
+    },
+    "free": 70,
+    "open": 30
+   },
+   "capacity_layout": 31,
+   "closers": [],
+   "hidden_compartments_needed": 2,
+   "hiding_rule": {
+    "doors": false,
+    "floor_min_m": 0.4,
+    "kinds": [
+     "drawer",
+     "open",
+     "covered"
+    ]
+   },
+   "high_drawers": {
+    "160": 4,
+    "202": 3
+   },
+   "problems": [],
+   "target_kinds": [
+    "drawer",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v3",
+ "goal": "The kitchen is dark. Collect the yellow tin and the yellow water bottle on the tray, then press Submit. They may be anywhere in this kitchen; some compartments may not open. A lantern with a glowing glass stands on a counter. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "eecb6276e85d5d16",
+ "layout_id": 31,
+ "origin": {
+  "cell": {
+   "compartment_count": 6,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T17:52:40",
+  "registry": "internal",
+  "seed": 3200115
+ },
+ "seed": 3200115,
+ "spec": {
+  "build_seed": 1396472718,
+  "closers": [],
+  "compartment_count": 6,
+  "contract_version": "blackout-search-kitchen-v2",
+  "counter_band": {
+   "front_fraction": 0.6667,
+   "islands": "anywhere",
+   "wall_backed_only": true
+  },
+  "cover_seed": 1842927061,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "tin_green"
+  ],
+  "hiding": {
+   "doors": false,
+   "floor_min_m": 0.4,
+   "kinds": [
+    "drawer",
+    "open",
+    "covered"
+   ]
+  },
+  "lamp_seed": 513194577,
+  "layout_id": 31,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 319347472,
+  "set_size": 2,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "drawer",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "can_green",
+   "can_red",
+   "mug_blue",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-drawer+open",
+ "style_id": 3,
+ "task": "blackout_search"
+}

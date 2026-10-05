@@ -1,0 +1,235 @@
+{
+ "contract_version": "stamps-composition-kitchen-v3",
+ "factors": {
+  "composition": 3,
+  "kitchen_layout": 14,
+  "kitchen_style": 9,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "die_dots": [
+    4,
+    3,
+    2,
+    3
+   ],
+   "placement": {
+    "min_board_footprint_margin_m": 0.01738,
+    "min_board_gap_m": 0.01421,
+    "min_board_submit_gap_m": 0.02624,
+    "min_stamp_gap_m": 0.05857,
+    "min_stamp_keepout_gap_m": 0.02198,
+    "min_stamp_region_margin_m": 0.01165,
+    "scratch_half_m": 0.117
+   },
+   "problems": [],
+   "recorded_solution_reachable": true,
+   "sampler_attempts": 2,
+   "solution_count": 1,
+   "solutions": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "target_dots": 6,
+   "target_id": 116
+  },
+  "scene": {
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (EGL device match failed in this tree)",
+   "g35": true
+  }
+ },
+ "generator_version": "v3",
+ "goal": "There are 4 stamps on the counters in this kitchen. Stamp the final board so it shows exactly the pattern on the reference card, then press Submit. The final board is the blue-bordered one with the printed 3x3 grid; the green-bordered reference card is not for stamping. The round self-inking stamps stand face down on the work surface. Each prints a fixed pattern of dots in whatever direction it is held, and the unmarked housings show neither the pattern nor which way it points, so try them on the tan scratch board. Ink stays where it lands, on the scratch board and on the final board alike. Fill exactly the reference card's grid cells with no ink outside the final board's grid, put every stamp back down on the counter and let go, then press the red SUBMIT button. Your first submission ends the episode; a wrong submission or no submission fails. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "e983921c6470193c",
+ "layout_id": 14,
+ "origin": {
+  "cell": {
+   "composition": 3,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T00:50:51",
+  "note": "2026-10-04 extra",
+  "registry": "internal",
+  "seed": 6200104,
+  "staging": "internal"
+ },
+ "seed": 6200104,
+ "spec": {
+  "board_yaw": {
+   "final": -0.079758,
+   "reference": -0.07355,
+   "scratch": 0.015893
+  },
+  "composition": 3,
+  "contract_version": "stamps-composition-kitchen-v3",
+  "handle_rgba": [
+   [
+    0.72,
+    0.55,
+    0.32,
+    1.0
+   ],
+   [
+    0.62,
+    0.34,
+    0.4,
+    1.0
+   ],
+   [
+    0.66,
+    0.62,
+    0.3,
+    1.0
+   ],
+   [
+    0.46,
+    0.4,
+    0.6,
+    1.0
+   ]
+  ],
+  "hidden": [],
+  "hidden_plan": {
+   "flavour_drawn": null,
+   "flavour_fallback": false,
+   "look": [],
+   "object_candidates": [],
+   "place_candidates": [],
+   "rescatter": null,
+   "uncover_flavour": null
+  },
+  "initial_yaw_rad": [
+   0.983328,
+   -0.014824,
+   -0.728932,
+   -1.427856
+  ],
+  "mask_ids": [
+   9,
+   7,
+   3,
+   6
+  ],
+  "observability": "visible",
+  "paper_rgb": {
+   "final": [
+    246,
+    241,
+    232
+   ],
+   "reference": [
+    245,
+    245,
+    245
+   ],
+   "scratch": [
+    238,
+    240,
+    244
+   ]
+  },
+  "placement": {
+   "final": [
+    0.343198,
+    -0.036414
+   ],
+   "reference": [
+    0.348387,
+    0.15448
+   ],
+   "scratch": [
+    -0.229107,
+    0.051376
+   ],
+   "submit": [
+    0.345,
+    -0.198
+   ]
+  },
+  "sampler_attempts": 2,
+  "scratch_cells": 5,
+  "show_count": true,
+  "sole_rgba": [
+   0.26,
+   0.3,
+   0.28,
+   1.0
+  ],
+  "solution": [
+   [
+    0,
+    0
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "stamp_count": 4,
+  "stamp_xy": [
+   [
+    -0.346878,
+    -0.153503
+   ],
+   [
+    0.049059,
+    -0.133545
+   ],
+   [
+    -0.173254,
+    -0.218349
+   ],
+   [
+    0.207425,
+    -0.21606
+   ]
+  ],
+  "target": [
+   [
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1
+   ]
+  ],
+  "target_bits": 315,
+  "target_id": 116,
+  "unique": true
+ },
+ "split": "dev",
+ "split_key": "t116-k3",
+ "style_id": 9,
+ "task": "stamps"
+}

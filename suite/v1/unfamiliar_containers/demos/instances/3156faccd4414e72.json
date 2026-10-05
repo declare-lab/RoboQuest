@@ -1,0 +1,187 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 9,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [],
+   "decoys": [
+    1
+   ],
+   "holder_mechanisms": [
+    "press_drawer",
+    "press_drawer"
+   ],
+   "holders": [
+    0,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "lift_lid",
+    "press_drawer",
+    "sealed"
+   ],
+   "observability": {
+    "hidden": [
+     "box1"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "left",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. A lemon and an egg are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "3156faccd4414e72",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T00:51:39",
+  "registry": "internal",
+  "seed": 3001857
+ },
+ "seed": 3001857,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/wood_planks.png",
+   "knob_rgb": [
+    0.72,
+    0.73,
+    0.75
+   ],
+   "panel_texture": "wood/red_wood_planks.png"
+  },
+  "bowl_xy": [
+   -0.202827,
+   -0.174154
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "back",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "press_drawer",
+    "side": "right",
+    "yaw": 4.696952,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "left",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "sealed",
+    "side": "left",
+    "yaw": 0.010775,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 4.709138,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "back",
+    "face": "left",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "press_drawer",
+    "side": "left",
+    "yaw": 0.041401,
+    "yaw_quarter": 0
+   }
+  ],
+  "closers": [],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   1
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box1"
+   }
+  ],
+  "holder_mechanisms": [
+   "press_drawer",
+   "press_drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/lemon/lemon_0/model.xml",
+   "objects/objaverse/egg/egg_1/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "lemon",
+   "egg"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 9,
+  "layout_seed": 2005094487,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   3,
+   0,
+   1,
+   2
+  ],
+  "placement_seed": 1366785743,
+  "show_count": true,
+  "submit_xy": [
+   0.183738,
+   -0.18768
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "press_drawer+press_drawer",
+ "style_id": 9,
+ "task": "unfamiliar_containers"
+}

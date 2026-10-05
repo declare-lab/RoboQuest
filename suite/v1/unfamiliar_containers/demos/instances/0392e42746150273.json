@@ -1,0 +1,188 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 16,
+  "kitchen_style": 7,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    2
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "drawer",
+    "flip_lid"
+   ],
+   "holders": [
+    0,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "drawer",
+    "flip_lid",
+    "press_door",
+    "press_drawer"
+   ],
+   "observability": {
+    "hidden": [
+     "box0"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "left",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are boxes on the counters in this kitchen. An egg and a lime are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "0392e42746150273",
+ "layout_id": 16,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T13:19:35",
+  "registry": "internal",
+  "seed": 3012216
+ },
+ "seed": 3012216,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/wood_planks_2.png",
+   "knob_rgb": [
+    0.72,
+    0.73,
+    0.75
+   ],
+   "panel_texture": "wood/warm_wood_grain.png"
+  },
+  "bowl_xy": [
+   -0.202795,
+   -0.172952
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "left",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "drawer",
+    "side": "right",
+    "yaw": 3.098545,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "left",
+    "face": "right",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "press_drawer",
+    "side": "back",
+    "yaw": 1.607574,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "left",
+    "dummy_face": "left",
+    "dummy_side": "back",
+    "face": "back",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "press_door",
+    "side": "right",
+    "yaw": 4.736818,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "back",
+    "face": "top",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 1.526045,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [
+   2
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box0"
+   }
+  ],
+  "holder_mechanisms": [
+   "drawer",
+   "flip_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/egg/egg_1/model.xml",
+   "objects/objaverse/lime/lime_1/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "egg",
+   "lime"
+  ],
+  "kitchen_layout": 16,
+  "kitchen_style": 7,
+  "layout_seed": 2054654839,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   0,
+   2,
+   3,
+   1
+  ],
+  "placement_seed": 2108972753,
+  "show_count": false,
+  "submit_xy": [
+   0.17676,
+   -0.196159
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "drawer+flip_lid",
+ "style_id": 7,
+ "task": "unfamiliar_containers"
+}

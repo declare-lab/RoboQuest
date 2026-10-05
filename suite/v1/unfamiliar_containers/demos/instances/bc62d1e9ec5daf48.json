@@ -1,0 +1,193 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 20,
+  "kitchen_style": 9,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closer_windows": {
+    "2": 253
+   },
+   "closers": [
+    2
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "lift_lid",
+    "lift_lid"
+   ],
+   "holders": [
+    0,
+    1
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "door",
+    "flip_lid",
+    "lift_lid"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "front",
+    "left",
+    "right",
+    "top"
+   ]
+  },
+  "scene": {
+   "build_and_clear_access_preflight": true,
+   "closer_rule": true,
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (GPUs in use; EGL not touched)",
+   "g35": true
+  }
+ },
+ "generator_version": "v6",
+ "goal": "There are 4 boxes on the counters in this kitchen. An apple and an egg are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "bc62d1e9ec5daf48",
+ "layout_id": 20,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T18:08:54",
+  "note": "2026-10-04 layouts 12/20 batch b",
+  "registry": "internal",
+  "seed": 7210076,
+  "staging": "internal"
+ },
+ "seed": 7210076,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/wood_planks_wall.png",
+   "knob_rgb": [
+    0.42,
+    0.42,
+    0.45
+   ],
+   "panel_texture": "wood/gray_wood_planks.png"
+  },
+  "bowl_xy": [
+   -0.205587,
+   -0.173303
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 3.135357,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": -0.058558,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "left",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "door",
+    "side": "right",
+    "yaw": 3.135864,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 4.763788,
+    "yaw_quarter": 3
+   }
+  ],
+  "closers": [
+   2
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "lift_lid",
+   "lift_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   1
+  ],
+  "item_assets": [
+   "objects/objaverse/apple/apple_1/model.xml",
+   "objects/objaverse/egg/egg_1/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "apple",
+   "egg"
+  ],
+  "kitchen_layout": 20,
+  "kitchen_style": 9,
+  "layout_seed": 1262947864,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   0,
+   3,
+   2,
+   1
+  ],
+  "placement_seed": 1861009244,
+  "show_count": true,
+  "submit_xy": [
+   0.172904,
+   -0.188054
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "lift_lid+lift_lid",
+ "style_id": 9,
+ "task": "unfamiliar_containers"
+}

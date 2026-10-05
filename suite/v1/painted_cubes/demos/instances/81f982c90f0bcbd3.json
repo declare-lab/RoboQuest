@@ -1,0 +1,186 @@
+{
+ "contract_version": "painted-cubes-kitchen-v3",
+ "factors": {
+  "cube_count": 4,
+  "kitchen_layout": 31,
+  "kitchen_style": 7,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "cover_band_y_max_m": 0.195,
+   "fixed_prop_gaps_m": {
+    "bin_left-bin_right": 0.59,
+    "bin_left-submit": 0.675,
+    "bin_right-submit": 0.19
+   },
+   "hidden_configurations_checked": 12,
+   "min_bin_to_zone_edge_m": 0.015,
+   "min_cube_gap_m": 0.13033,
+   "min_fixed_prop_gap_m": 0.19,
+   "min_keepout_gap_m": 0.1817,
+   "min_occluder_clearance_m": null,
+   "min_pair_gap_m": 0.11873,
+   "min_zone_margin_m": 0.00488,
+   "problems": []
+  },
+  "scene": {
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (render gate; GPUs were full)",
+   "g35": true,
+   "g35_progress": [
+    0.0,
+    1.0
+   ]
+  }
+ },
+ "generator_version": "v6",
+ "goal": "There are 4 cubes on the counters in this kitchen. Some of them satisfy this rule: every cube that has a red square. Put every cube that satisfies it in the blue bin and every other cube in the yellow bin, then press Submit. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "81f982c90f0bcbd3",
+ "layout_id": 31,
+ "origin": {
+  "cell": {
+   "cube_count": 4,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-03T18:38:08",
+  "note": "2026-10-03 extra",
+  "registry": "internal",
+  "seed": 4300555,
+  "staging": "internal"
+ },
+ "seed": 4300555,
+ "spec": {
+  "assets": {
+   "plate": "objaverse/plate/plate_1/model.xml",
+   "plate_scale": 1.0
+  },
+  "bin_interior_height": 0.3,
+  "bins": [
+   {
+    "body_rgba": [
+     0.15,
+     0.55,
+     0.55,
+     1.0
+    ],
+    "lid": "blue",
+    "name": "cube_bin_blue",
+    "side": "bin_left",
+    "xy": [
+     -0.43,
+     0.15
+    ]
+   },
+   {
+    "body_rgba": [
+     0.45,
+     0.3,
+     0.55,
+     1.0
+    ],
+    "lid": "yellow",
+    "name": "cube_bin_yellow",
+    "side": "bin_right",
+    "xy": [
+     0.43,
+     0.15
+    ]
+   }
+  ],
+  "contract_version": "painted-cubes-kitchen-v3",
+  "cube_count": 4,
+  "cubes": [
+   {
+    "name": "cube_a",
+    "target": true,
+    "xy": [
+     -0.10123,
+     -0.065917
+    ],
+    "yaw": 1.909076
+   },
+   {
+    "name": "cube_b",
+    "target": true,
+    "xy": [
+     0.014818,
+     0.091963
+    ],
+    "yaw": -0.522128
+   },
+   {
+    "name": "cube_c",
+    "target": false,
+    "xy": [
+     -0.075057,
+     -0.256401
+    ],
+    "yaw": 0.61107
+   },
+   {
+    "name": "cube_d",
+    "target": true,
+    "xy": [
+     -0.484293,
+     -0.278353
+    ],
+    "yaw": -2.172192
+   }
+  ],
+  "footprint": [
+   1.16,
+   0.64
+  ],
+  "hidden": [],
+  "hidden_fallbacks": [],
+  "hidden_plan": {
+   "build_time": [
+    "the decor standing on the work surface (observe.decor_shapes_on_work)",
+    "the fixtures overhead, so the headroom above the cover (headroom.overhead_boxes)",
+    "the floor beside the counter, so the stance the base slides to (observe.stance_gate)",
+    "the work-surface edges beyond the task frame (a counter end the bowl could slide to)"
+   ],
+   "covers": []
+  },
+  "mark_seed": 1869831550,
+  "observability": "visible",
+  "occluders": [],
+  "placement": {
+   "bin_left": [
+    -0.43,
+    0.15
+   ],
+   "bin_right": [
+    0.43,
+    0.15
+   ],
+   "submit": [
+    0.43,
+    -0.2
+   ]
+  },
+  "rule": {
+   "colour": "red",
+   "kind": "has_mark",
+   "shape": "square"
+  },
+  "show_count": true,
+  "target_count": 3,
+  "visible_plan": {
+   "cube_a": 2,
+   "cube_b": 2,
+   "cube_c": 1,
+   "cube_d": 1
+  }
+ },
+ "split": "dev",
+ "split_key": "has_mark-c4-t3",
+ "style_id": 7,
+ "task": "painted_cubes"
+}

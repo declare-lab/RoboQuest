@@ -1,0 +1,183 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 16,
+  "kitchen_style": 2,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [],
+   "decoys": [],
+   "holder_mechanisms": [
+    "lift_lid",
+    "flip_lid"
+   ],
+   "holders": [
+    1,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "flip_lid",
+    "lift_lid",
+    "press_drawer"
+   ],
+   "observability": {
+    "hidden": [
+     "box0"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "front",
+    "left",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. An egg and a peach are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "a62651832cf1e32a",
+ "layout_id": 16,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T11:28:34",
+  "registry": "internal",
+  "seed": 3010571
+ },
+ "seed": 3010571,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/wood_grain_1.png",
+   "knob_rgb": [
+    0.42,
+    0.42,
+    0.45
+   ],
+   "panel_texture": "wood/walnut_wood_grain.png"
+  },
+  "bowl_xy": [
+   -0.194441,
+   -0.171318
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "left",
+    "dummy_side": "right",
+    "face": "right",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "press_drawer",
+    "side": "left",
+    "yaw": 3.125117,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 3.162925,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 4.69778,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 3.08325,
+    "yaw_quarter": 2
+   }
+  ],
+  "closers": [],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box0"
+   }
+  ],
+  "holder_mechanisms": [
+   "lift_lid",
+   "flip_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   1,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/egg/egg_1/model.xml",
+   "objects/objaverse/peach/peach_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "egg",
+   "peach"
+  ],
+  "kitchen_layout": 16,
+  "kitchen_style": 2,
+  "layout_seed": 559041518,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   1,
+   3,
+   0,
+   2
+  ],
+  "placement_seed": 1363667639,
+  "show_count": true,
+  "submit_xy": [
+   0.179624,
+   -0.188565
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "flip_lid+lift_lid",
+ "style_id": 2,
+ "task": "unfamiliar_containers"
+}

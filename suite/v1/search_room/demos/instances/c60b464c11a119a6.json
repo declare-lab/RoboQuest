@@ -1,0 +1,107 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 8,
+  "kitchen_layout": 26,
+  "kitchen_style": 6,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 11,
+    "doors": {
+     "240": 3,
+     "300": 1
+    },
+    "drawers": {
+     "160": 4,
+     "185": 2,
+     "368": 1
+    },
+    "free": 84,
+    "open": 30
+   },
+   "capacity_layout": 26,
+   "closers": [
+    1
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "covered",
+    "covered",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the red mug, the green can and the blue mug on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "c60b464c11a119a6",
+ "layout_id": 26,
+ "origin": {
+  "cell": {
+   "compartment_count": 8,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T05:40:23",
+  "registry": "internal",
+  "seed": 3501228
+ },
+ "seed": 3501228,
+ "spec": {
+  "build_seed": 796623394,
+  "closers": [
+   1
+  ],
+  "compartment_count": 8,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1607552888,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_blue",
+   "tin_green"
+  ],
+  "layout_id": 26,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1407689330,
+  "set_size": 3,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "covered",
+    "object": "mug_red"
+   },
+   {
+    "kind": "covered",
+    "object": "can_green"
+   },
+   {
+    "kind": "open",
+    "object": "mug_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_yellow",
+   "can_red",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-covered+covered+open",
+ "style_id": 6,
+ "task": "search_room"
+}

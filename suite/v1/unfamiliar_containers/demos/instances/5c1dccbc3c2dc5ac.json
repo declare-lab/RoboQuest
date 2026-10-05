@@ -1,0 +1,182 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 7,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    3
+   ],
+   "decoys": [
+    2
+   ],
+   "holder_mechanisms": [
+    "lift_lid",
+    "lift_lid"
+   ],
+   "holders": [
+    0,
+    1
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "lift_lid",
+    "sealed",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "left",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are boxes on the counters in this kitchen. A lime and a lemon are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "5c1dccbc3c2dc5ac",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T05:43:19",
+  "registry": "internal",
+  "seed": 3108666
+ },
+ "seed": 3108666,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/greenheart_wood_grain.png",
+   "knob_rgb": [
+    0.72,
+    0.73,
+    0.75
+   ],
+   "panel_texture": "wood/light_wood_planks.png"
+  },
+  "bowl_xy": [
+   -0.192723,
+   -0.170291
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "right",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 3.186573,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "left",
+    "face": "top",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 4.749348,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "left",
+    "dummy_face": "left",
+    "dummy_side": "back",
+    "face": "front",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "sealed",
+    "side": "left",
+    "yaw": 4.690615,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "back",
+    "face": "top",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 1.606775,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [
+   3
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   2
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "lift_lid",
+   "lift_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   1
+  ],
+  "item_assets": [
+   "objects/objaverse/lime/lime_1/model.xml",
+   "objects/objaverse/lemon/lemon_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "lime",
+   "lemon"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 7,
+  "layout_seed": 1746130984,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   2,
+   0,
+   1,
+   3
+  ],
+  "placement_seed": 1539165035,
+  "show_count": false,
+  "submit_xy": [
+   0.172611,
+   -0.184824
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "lift_lid+lift_lid",
+ "style_id": 7,
+ "task": "unfamiliar_containers"
+}

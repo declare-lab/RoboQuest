@@ -1,0 +1,216 @@
+{
+ "contract_version": "stamps-composition-kitchen-v3",
+ "factors": {
+  "composition": 2,
+  "kitchen_layout": 29,
+  "kitchen_style": 6,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "die_dots": [
+    2,
+    4,
+    3
+   ],
+   "placement": {
+    "min_board_footprint_margin_m": 0.00763,
+    "min_board_gap_m": 0.03028,
+    "min_board_submit_gap_m": 0.02627,
+    "min_stamp_gap_m": 0.03067,
+    "min_stamp_keepout_gap_m": 0.034,
+    "min_stamp_region_margin_m": 0.02198,
+    "scratch_half_m": 0.1
+   },
+   "problems": [],
+   "recorded_solution_reachable": true,
+   "sampler_attempts": 1,
+   "solution_count": 1,
+   "solutions": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "target_dots": 5,
+   "target_id": 82
+  }
+ },
+ "generator_version": "v3",
+ "goal": "There are stamps on the counters in this kitchen. Stamp the final board so it shows exactly the pattern on the reference card, then press Submit. The final board is the blue-bordered one with the printed 3x3 grid; the green-bordered reference card is not for stamping. The round self-inking stamps stand face down on the work surface. Each prints a fixed pattern of dots in whatever direction it is held, and the unmarked housings show neither the pattern nor which way it points, so try them on the tan scratch board. Ink stays where it lands, on the scratch board and on the final board alike. Fill exactly the reference card's grid cells with no ink outside the final board's grid, put every stamp back down on the counter and let go, then press the red SUBMIT button. Your first submission ends the episode; a wrong submission or no submission fails. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "bc8174642507f773",
+ "layout_id": 29,
+ "origin": {
+  "cell": {
+   "composition": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T05:04:13",
+  "registry": "internal",
+  "seed": 3000253
+ },
+ "seed": 3000253,
+ "spec": {
+  "board_yaw": {
+   "final": -0.054433,
+   "reference": -0.030004,
+   "scratch": -0.023521
+  },
+  "composition": 2,
+  "contract_version": "stamps-composition-kitchen-v3",
+  "handle_rgba": [
+   [
+    0.46,
+    0.4,
+    0.6,
+    1.0
+   ],
+   [
+    0.62,
+    0.34,
+    0.4,
+    1.0
+   ],
+   [
+    0.66,
+    0.62,
+    0.3,
+    1.0
+   ]
+  ],
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "occluder",
+    "object": "stamp_1"
+   }
+  ],
+  "hidden_plan": {
+   "flavour_drawn": null,
+   "flavour_fallback": false,
+   "look": [
+    [
+     "stamp_1",
+     "occluder"
+    ]
+   ],
+   "object_candidates": [],
+   "place_candidates": [],
+   "rescatter": null,
+   "uncover_flavour": null
+  },
+  "initial_yaw_rad": [
+   0.440722,
+   0.908892,
+   -0.849938
+  ],
+  "mask_ids": [
+   0,
+   11,
+   5
+  ],
+  "observability": "look",
+  "paper_rgb": {
+   "final": [
+    235,
+    236,
+    231
+   ],
+   "reference": [
+    246,
+    241,
+    232
+   ],
+   "scratch": [
+    243,
+    238,
+    226
+   ]
+  },
+  "placement": {
+   "final": [
+    0.325239,
+    -0.036866
+   ],
+   "reference": [
+    0.361771,
+    0.169856
+   ],
+   "scratch": [
+    -0.213995,
+    0.029859
+   ],
+   "submit": [
+    0.345,
+    -0.198
+   ]
+  },
+  "sampler_attempts": 1,
+  "scratch_cells": 4,
+  "show_count": false,
+  "sole_rgba": [
+   0.24,
+   0.27,
+   0.3,
+   1.0
+  ],
+  "solution": [
+   [
+    0,
+    0
+   ],
+   [
+    2,
+    2
+   ]
+  ],
+  "stamp_count": 3,
+  "stamp_xy": [
+   [
+    -0.243291,
+    -0.167506
+   ],
+   [
+    0.030874,
+    -0.208015
+   ],
+   [
+    0.11555,
+    -0.083392
+   ]
+  ],
+  "target": [
+   [
+    1,
+    1,
+    0
+   ],
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    1
+   ]
+  ],
+  "target_bits": 339,
+  "target_id": 82,
+  "unique": true
+ },
+ "split": "dev",
+ "split_key": "t82-k2",
+ "style_id": 6,
+ "task": "stamps"
+}

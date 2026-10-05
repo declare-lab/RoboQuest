@@ -1,0 +1,193 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 2,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    3
+   ],
+   "decoys": [
+    1
+   ],
+   "holder_mechanisms": [
+    "press_drawer",
+    "drawer"
+   ],
+   "holders": [
+    0,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "door",
+    "drawer",
+    "press_drawer",
+    "sealed"
+   ],
+   "observability": {
+    "hidden": [
+     "box1"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "front",
+    "left",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. An apple and a kiwi are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "2e20b9e717d010df",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T10:36:40",
+  "registry": "internal",
+  "seed": 3008145
+ },
+ "seed": 3008145,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/wood_planks_3.png",
+   "knob_rgb": [
+    0.55,
+    0.45,
+    0.3
+   ],
+   "panel_texture": "wood/warm_wood_grain_2.png"
+  },
+  "bowl_xy": [
+   -0.202828,
+   -0.166551
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "right",
+    "dummy_side": "left",
+    "face": "back",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "press_drawer",
+    "side": "front",
+    "yaw": 3.182952,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "left",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "sealed",
+    "side": "right",
+    "yaw": 3.139617,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "back",
+    "face": "front",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "drawer",
+    "side": "left",
+    "yaw": 4.680538,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "left",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "door",
+    "side": "right",
+    "yaw": 3.171892,
+    "yaw_quarter": 2
+   }
+  ],
+  "closers": [
+   3
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   1
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box1"
+   }
+  ],
+  "holder_mechanisms": [
+   "press_drawer",
+   "drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/apple/apple_1/model.xml",
+   "objects/objaverse/kiwi/kiwi_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "apple",
+   "kiwi"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 2,
+  "layout_seed": 1505139513,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   3,
+   2,
+   1,
+   0
+  ],
+  "placement_seed": 638147236,
+  "show_count": true,
+  "submit_xy": [
+   0.185961,
+   -0.190084
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "drawer+press_drawer",
+ "style_id": 2,
+ "task": "unfamiliar_containers"
+}

@@ -1,0 +1,1592 @@
+{
+ "contract_version": "puzzle-box-interlock-kitchen-v2",
+ "factors": {
+  "chain_length": 5,
+  "cover": "full",
+  "kitchen_layout": 25,
+  "kitchen_style": 6
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "chain": [
+    {
+     "after": 0.05002770208727791,
+     "before": 0.0,
+     "direction": 1.0,
+     "displacement": 0.05002770208727791,
+     "held": {
+      "bolt_1": 2.477533775136497e-18,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.004999999999997332,
+      "bolt_5": 0.05342865388517498,
+      "decoy_1": 2.2375677594102692e-05,
+      "decoy_2": 0.05000000000010294,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "bolt_5",
+     "passed_release": true,
+     "peak_displacement": 0.06417589799663488,
+     "peak_penetration_m": 0.0009328811060443112
+    },
+    {
+     "after": 0.050027702066878586,
+     "before": 0.004999999999997332,
+     "direction": 1.0,
+     "displacement": 0.04502770206688125,
+     "held": {
+      "bolt_1": 2.477533775136536e-18,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.05342864401787531,
+      "bolt_5": 0.05000001081464989,
+      "decoy_1": 6.539497985759476e-06,
+      "decoy_2": 0.05000000000000012,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "bolt_4",
+     "passed_release": true,
+     "peak_displacement": 0.057807444839092566,
+     "peak_penetration_m": 0.0009328811056759105
+    },
+    {
+     "after": 0.050027702066878364,
+     "before": 0.004999932406688585,
+     "direction": 1.0,
+     "displacement": 0.04502776966018978,
+     "held": {
+      "bolt_1": 2.477533775136536e-18,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.05342864401776751,
+      "bolt_4": 0.05000001081464194,
+      "bolt_5": 0.0500000000000835,
+      "decoy_1": 1.9112285527846234e-06,
+      "decoy_2": 0.05000000000000012,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "bolt_3",
+     "passed_release": true,
+     "peak_displacement": 0.05780746815040731,
+     "peak_penetration_m": 0.0009328811053074547
+    },
+    {
+     "after": 0.05002770208069702,
+     "before": 0.0037753943666080647,
+     "direction": 1.0,
+     "displacement": 0.046252307714088954,
+     "held": {
+      "bolt_1": 2.477533775136536e-18,
+      "bolt_2": 0.053428650701949736,
+      "bolt_3": 0.05000001081464194,
+      "bolt_4": 0.0500000000000835,
+      "bolt_5": 0.05000000000000012,
+      "decoy_1": 5.585741579756713e-07,
+      "decoy_2": 0.05000000000000012,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "bolt_2",
+     "passed_release": true,
+     "peak_displacement": 0.060542860019605405,
+     "peak_penetration_m": 0.000932881104938971
+    },
+    {
+     "after": 0.05002662716820362,
+     "before": 2.477533775136536e-18,
+     "direction": 1.0,
+     "displacement": 0.05002662716820362,
+     "held": {
+      "bolt_1": 0.05324332050559363,
+      "bolt_2": 0.05000001081464732,
+      "bolt_3": 0.0500000000000835,
+      "bolt_4": 0.05000000000000012,
+      "bolt_5": 0.05000000000000012,
+      "decoy_1": -0.0013059559476350504,
+      "decoy_2": 0.05000000000000012,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "bolt_1",
+     "passed_release": true,
+     "peak_displacement": 0.06303732431497507,
+     "peak_penetration_m": 0.0009699025873949425
+    },
+    {
+     "after": 0.2000155731356315,
+     "before": 0.0049999999999949165,
+     "direction": 1.0,
+     "displacement": 0.19501557313563658,
+     "held": {
+      "bolt_1": 0.05000001026175871,
+      "bolt_2": 0.0500000000000835,
+      "bolt_3": 0.05000000000000012,
+      "bolt_4": 0.05000000000000012,
+      "bolt_5": 0.05000000000000012,
+      "decoy_1": -0.00038167766107341836,
+      "decoy_2": 0.05000000000000012,
+      "lid": 0.20150043851818042
+     },
+     "newtons": 12.0,
+     "part": "lid",
+     "passed_release": true,
+     "peak_displacement": 0.20838176393541238,
+     "peak_penetration_m": 0.0009328811042021288
+    }
+   ],
+   "chest_pose": {
+    "island": {
+     "attempts": 9,
+     "xy": [
+      -0.1055,
+      0.0728
+     ],
+     "yaw": 0.1717,
+     "yaw_deg": 9.8
+    },
+    "problems": {
+     "island": [],
+     "wall": []
+    },
+    "wall": {
+     "attempts": 24,
+     "xy": [
+      -0.1523,
+      0.0929
+     ],
+     "yaw": 0.0887,
+     "yaw_deg": 5.1
+    }
+   },
+   "decoys": [
+    {
+     "after": -0.0020355031437252827,
+     "before": 0.0,
+     "direction": -1.0,
+     "displacement": 0.0020355031437252827,
+     "held": {
+      "bolt_1": 0.0037882314305972605,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.004999999999997332,
+      "bolt_5": 0.0,
+      "decoy_1": -0.051891911605586684,
+      "decoy_2": 0.0,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "decoy_1",
+     "peak_displacement": 0.060725753233197906,
+     "peak_penetration_m": 0.0009328811078844892
+    },
+    {
+     "after": 0.00203550314148003,
+     "before": -0.0020355031437252827,
+     "direction": 1.0,
+     "displacement": 0.004071006285205313,
+     "held": {
+      "bolt_1": -1.1673193745990187e-06,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.004999999999997332,
+      "bolt_5": 0.0,
+      "decoy_1": 0.051891909945049115,
+      "decoy_2": 0.0,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "decoy_1",
+     "peak_displacement": 0.061180759839463875,
+     "peak_penetration_m": 0.001136585220972537
+    },
+    {
+     "after": -0.05003092542391145,
+     "before": 0.0,
+     "direction": -1.0,
+     "displacement": 0.05003092542391145,
+     "held": {
+      "bolt_1": -8.837497058300147e-12,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.004999999999997332,
+      "bolt_5": 0.0,
+      "decoy_1": 0.0008963374704080653,
+      "decoy_2": -0.054000083419304415,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "decoy_2",
+     "peak_displacement": 0.06407851347375662,
+     "peak_penetration_m": 0.0009328811071497337
+    },
+    {
+     "after": 0.05003092555714442,
+     "before": -0.05003092542391145,
+     "direction": 1.0,
+     "displacement": 0.10006185098105587,
+     "held": {
+      "bolt_1": -6.690664423888528e-17,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.004999999999997332,
+      "bolt_5": 0.0,
+      "decoy_1": 0.00026196288615810086,
+      "decoy_2": 0.05400015244562154,
+      "lid": 0.0049999999999949165
+     },
+     "newtons": 12.0,
+     "part": "decoy_2",
+     "peak_displacement": 0.11437788435642683,
+     "peak_penetration_m": 0.0009328811067811109
+    }
+   ],
+   "item_after": {
+    "distance_m": 0.3309063220521003,
+    "first_hit_geom": "puzzle_item_block",
+    "hits_lid": false
+   },
+   "item_before": {
+    "distance_m": 0.31200000000000017,
+    "first_hit_geom": "puzzle_lid_seg0",
+    "hits_lid": true
+   },
+   "lid_after_decoys": {
+    "after": 0.005000000045081988,
+    "before": 0.0049999999999949165,
+    "direction": 1.0,
+    "displacement": 4.508707122929945e-11,
+    "held": {
+     "bolt_1": -1.135668230194587e-18,
+     "bolt_2": 0.0037753943666080647,
+     "bolt_3": 0.004999932406688585,
+     "bolt_4": 0.004999999999997332,
+     "bolt_5": 0.0,
+     "decoy_1": 7.656106766689115e-05,
+     "decoy_2": 0.050000012562065196,
+     "lid": 0.005029560910811835
+    },
+    "newtons": 12.0,
+    "part": "lid",
+    "peak_displacement": 0.0003530208562575205,
+    "peak_penetration_m": 0.0009328811064126413
+   },
+   "mujoco_version": "3.3.1",
+   "relock": [
+    {
+     "bolt_after_push_m": 0.005000000049945569,
+     "bolt_after_return_m": -6.365302172933483e-17,
+     "bolt_before_m": 0.0,
+     "bolt_can_release": false,
+     "bolt_creep_m": 4.994833453092484e-11,
+     "bolt_free": null,
+     "bolt_released_before": false,
+     "bolt_still_blocked": true,
+     "bolt_unmoved": true,
+     "bolt_while_held_m": -1.1105533723273853e-06,
+     "decoy_after_return_m": 0.00026196288613046525,
+     "decoy_creep_m": 7.158568789130921e-05,
+     "decoy_final_m": -0.0002549641042091601,
+     "decoy_full": true,
+     "decoy_home": true,
+     "decoy_moved_by_release_m": 0.00018540181847165077,
+     "decoy_while_held_m": 0.051891909784969686,
+     "lid_blocked_after_relock": null,
+     "lid_open": true,
+     "ok": true,
+     "released_before": [],
+     "relocked": null,
+     "state": 0
+    },
+    {
+     "bolt_after_push_m": 0.005000000049945569,
+     "bolt_after_return_m": -6.365302172933293e-17,
+     "bolt_before_m": 0.0,
+     "bolt_can_release": false,
+     "bolt_creep_m": 4.994833453092484e-11,
+     "bolt_free": null,
+     "bolt_released_before": false,
+     "bolt_still_blocked": true,
+     "bolt_unmoved": true,
+     "bolt_while_held_m": -1.1105533723273594e-06,
+     "decoy_after_return_m": 0.00026196288613046536,
+     "decoy_creep_m": 7.158568789130924e-05,
+     "decoy_final_m": -0.0002549641042091601,
+     "decoy_full": true,
+     "decoy_home": true,
+     "decoy_moved_by_release_m": 0.00018540181847165083,
+     "decoy_while_held_m": 0.05189190978496968,
+     "lid_blocked_after_relock": null,
+     "lid_open": true,
+     "ok": true,
+     "released_before": [
+      "bolt_5"
+     ],
+     "relocked": null,
+     "state": 1
+    },
+    {
+     "bolt_after_push_m": 0.005000000049945569,
+     "bolt_after_return_m": -6.365302172933207e-17,
+     "bolt_before_m": 0.0,
+     "bolt_can_release": false,
+     "bolt_creep_m": 4.994833453092484e-11,
+     "bolt_free": null,
+     "bolt_released_before": false,
+     "bolt_still_blocked": true,
+     "bolt_unmoved": true,
+     "bolt_while_held_m": -1.1105533723273406e-06,
+     "decoy_after_return_m": 0.00026196288613046525,
+     "decoy_creep_m": 7.158568789130924e-05,
+     "decoy_final_m": -0.0002549641042091601,
+     "decoy_full": true,
+     "decoy_home": true,
+     "decoy_moved_by_release_m": 0.00018540181847165072,
+     "decoy_while_held_m": 0.051891909784969686,
+     "lid_blocked_after_relock": null,
+     "lid_open": true,
+     "ok": true,
+     "released_before": [
+      "bolt_5",
+      "bolt_4"
+     ],
+     "relocked": null,
+     "state": 2
+    },
+    {
+     "bolt_after_push_m": 0.005000000049945569,
+     "bolt_after_return_m": -6.365302172933306e-17,
+     "bolt_before_m": 0.0,
+     "bolt_can_release": false,
+     "bolt_creep_m": 4.994833453092484e-11,
+     "bolt_free": null,
+     "bolt_released_before": false,
+     "bolt_still_blocked": true,
+     "bolt_unmoved": true,
+     "bolt_while_held_m": -1.1105533723273611e-06,
+     "decoy_after_return_m": 0.00026196288613046536,
+     "decoy_creep_m": 7.158568789130924e-05,
+     "decoy_final_m": -0.00025496410420916007,
+     "decoy_full": true,
+     "decoy_home": true,
+     "decoy_moved_by_release_m": 0.00018540181847165083,
+     "decoy_while_held_m": 0.05189190978496968,
+     "lid_blocked_after_relock": null,
+     "lid_open": true,
+     "ok": true,
+     "released_before": [
+      "bolt_5",
+      "bolt_4",
+      "bolt_3"
+     ],
+     "relocked": null,
+     "state": 3
+    },
+    {
+     "bolt_after_push_m": 0.05002662716816219,
+     "bolt_after_return_m": -6.365302172933211e-17,
+     "bolt_before_m": 0.0,
+     "bolt_can_release": true,
+     "bolt_creep_m": 2.6627168162068893e-05,
+     "bolt_free": true,
+     "bolt_released_before": false,
+     "bolt_still_blocked": null,
+     "bolt_unmoved": true,
+     "bolt_while_held_m": -1.1105533723273404e-06,
+     "decoy_after_return_m": 0.00026196288613046536,
+     "decoy_creep_m": 0.0008098732653754642,
+     "decoy_final_m": -3.50773182809047e-08,
+     "decoy_full": true,
+     "decoy_home": true,
+     "decoy_moved_by_release_m": 0.0011281243171642739,
+     "decoy_while_held_m": 0.051891909784969686,
+     "lid_blocked_after_relock": null,
+     "lid_open": true,
+     "ok": true,
+     "released_before": [
+      "bolt_5",
+      "bolt_4",
+      "bolt_3",
+      "bolt_2"
+     ],
+     "relocked": null,
+     "state": 4
+    },
+    {
+     "bolt_after_push_m": 0.05002662716816814,
+     "bolt_after_return_m": 0.0017251304218009504,
+     "bolt_before_m": 0.05002662716820367,
+     "bolt_can_release": true,
+     "bolt_creep_m": 2.6627168168022464e-05,
+     "bolt_free": true,
+     "bolt_released_before": true,
+     "bolt_still_blocked": null,
+     "bolt_unmoved": null,
+     "bolt_while_held_m": 0.0017251304218009504,
+     "decoy_after_return_m": 0.00026196288734919247,
+     "decoy_creep_m": 0.0008101218295292812,
+     "decoy_final_m": -3.508808411836268e-08,
+     "decoy_full": true,
+     "decoy_home": true,
+     "decoy_moved_by_release_m": 0.0011283901583512752,
+     "decoy_while_held_m": 0.0518919168444552,
+     "lid_blocked_after_relock": true,
+     "lid_open": true,
+     "ok": true,
+     "released_before": [
+      "bolt_5",
+      "bolt_4",
+      "bolt_3",
+      "bolt_2",
+      "bolt_1"
+     ],
+     "relocked": true,
+     "state": 5
+    },
+    {
+     "bolt_after_push_m": 0.05002662717240208,
+     "bolt_after_return_m": 0.0016578169644175214,
+     "bolt_before_m": 0.05000000020149694,
+     "bolt_can_release": true,
+     "bolt_creep_m": 2.662717240196205e-05,
+     "bolt_free": true,
+     "bolt_released_before": true,
+     "bolt_still_blocked": null,
+     "bolt_unmoved": null,
+     "bolt_while_held_m": 0.0016578169644175214,
+     "decoy_after_return_m": 0.00026196288736808106,
+     "decoy_creep_m": 0.0008180226679954262,
+     "decoy_final_m": -3.543028608675886e-08,
+     "decoy_full": true,
+     "decoy_home": true,
+     "decoy_moved_by_release_m": 0.001136840124364572,
+     "decoy_while_held_m": 0.05189191695386628,
+     "lid_blocked_after_relock": null,
+     "lid_open": true,
+     "ok": true,
+     "released_before": [
+      "bolt_5",
+      "bolt_4",
+      "bolt_3",
+      "bolt_2",
+      "bolt_1",
+      "lid"
+     ],
+     "relocked": true,
+     "state": 6
+    }
+   ],
+   "relock_ok": true,
+   "rest_drift_m": {
+    "bolt_1": 0.0,
+    "bolt_2": 0.0,
+    "bolt_3": 0.0,
+    "bolt_4": 0.0,
+    "bolt_5": 0.0,
+    "decoy_1": 0.0,
+    "decoy_2": 0.0,
+    "lid": 0.0
+   },
+   "wrong_first": [
+    {
+     "after": 0.005000000049945569,
+     "before": 0.0,
+     "direction": 1.0,
+     "displacement": 0.005000000049945569,
+     "held": {
+      "bolt_1": 0.005041562628215337,
+      "bolt_2": 0.0,
+      "bolt_3": 0.0,
+      "bolt_4": 0.0,
+      "bolt_5": 0.0,
+      "decoy_1": 0.0,
+      "decoy_2": 0.0,
+      "lid": 0.0
+     },
+     "newtons": 12.0,
+     "part": "bolt_1",
+     "peak_displacement": 0.007245624151062458,
+     "peak_penetration_m": 0.0011228120755312314,
+     "still_blocked": true
+    },
+    {
+     "after": 0.005000000050150458,
+     "before": 0.0,
+     "direction": 1.0,
+     "displacement": 0.005000000050150458,
+     "held": {
+      "bolt_1": 0.0037882314305972605,
+      "bolt_2": 0.005042715092840582,
+      "bolt_3": 0.0,
+      "bolt_4": 0.0,
+      "bolt_5": 0.0,
+      "decoy_1": 0.0,
+      "decoy_2": 0.0,
+      "lid": 0.0
+     },
+     "newtons": 12.0,
+     "part": "bolt_2",
+     "peak_displacement": 0.006925994338821356,
+     "peak_penetration_m": 0.0009629971694106766,
+     "still_blocked": true
+    },
+    {
+     "after": 0.004999932406689079,
+     "before": 0.0,
+     "direction": 1.0,
+     "displacement": 0.004999932406689079,
+     "held": {
+      "bolt_1": 0.0037882314305972605,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.005042715092840612,
+      "bolt_4": 0.0,
+      "bolt_5": 0.0,
+      "decoy_1": 0.0,
+      "decoy_2": 0.0,
+      "lid": 0.0
+     },
+     "newtons": 12.0,
+     "part": "bolt_3",
+     "peak_displacement": 0.006943987057048425,
+     "peak_penetration_m": 0.0009719935285242192,
+     "still_blocked": true
+    },
+    {
+     "after": 0.00500000005015046,
+     "before": 0.0,
+     "direction": 1.0,
+     "displacement": 0.00500000005015046,
+     "held": {
+      "bolt_1": 0.0037882314305972605,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.005042715092841748,
+      "bolt_5": 0.0,
+      "decoy_1": 0.0,
+      "decoy_2": 0.0,
+      "lid": 0.0
+     },
+     "newtons": 12.0,
+     "part": "bolt_4",
+     "peak_displacement": 0.007520760656709924,
+     "peak_penetration_m": 0.0012603803283549597,
+     "still_blocked": true
+    },
+    {
+     "after": 0.005000000045081988,
+     "before": 0.0,
+     "direction": 1.0,
+     "displacement": 0.005000000045081988,
+     "held": {
+      "bolt_1": 0.0037882314305972605,
+      "bolt_2": 0.0037753943666080647,
+      "bolt_3": 0.004999932406688585,
+      "bolt_4": 0.004999999999997332,
+      "bolt_5": 0.0,
+      "decoy_1": 0.0,
+      "decoy_2": 0.0,
+      "lid": 0.005029560910818699
+     },
+     "newtons": 12.0,
+     "part": "lid",
+     "peak_displacement": 0.006720232755830155,
+     "peak_penetration_m": 0.000932881108355353,
+     "still_blocked": true
+    }
+   ]
+  }
+ },
+ "generator_version": "v3",
+ "goal": "Open the wooden puzzle box on the counter, take out the tangerine inside, and stand it inside the tray. The lid slides sideways but is locked by sliding bolts with round black handles: a part moves only when nothing blocks it, so work out the order. Any order that works is fine. Once the tangerine is inside the tray and you have let go of everything, press the red SUBMIT button. Your first submission ends the episode; a wrong submission or no submission fails.",
+ "instance_id": "fc6a4fd2a523c628",
+ "layout_id": 25,
+ "origin": {
+  "cell": {
+   "chain_length": 5,
+   "cover": "full"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T04:20:58",
+  "registry": "internal",
+  "seed": 3300138
+ },
+ "seed": 3300138,
+ "spec": {
+  "chain_length": 5,
+  "colours": {
+   "deck": [
+    0.66,
+    0.5,
+    0.32
+   ],
+   "handle": [
+    0.12,
+    0.26,
+    0.14
+   ],
+   "lid": [
+    0.74,
+    0.56,
+    0.33
+   ],
+   "metal": [
+    0.58,
+    0.6,
+    0.63
+   ],
+   "wood": [
+    0.55,
+    0.38,
+    0.22
+   ]
+  },
+  "contract_version": "puzzle-box-interlock-kitchen-v2",
+  "cover": "full",
+  "decoys": 2,
+  "item_name": "tangerine",
+  "layout": {
+   "attempt": 1,
+   "chain_length": 5,
+   "colours": {
+    "deck": [
+     0.66,
+     0.5,
+     0.32
+    ],
+    "handle": [
+     0.12,
+     0.26,
+     0.14
+    ],
+    "lid": [
+     0.74,
+     0.56,
+     0.33
+    ],
+    "metal": [
+     0.58,
+     0.6,
+     0.63
+    ],
+    "wood": [
+     0.55,
+     0.38,
+     0.22
+    ]
+   },
+   "cover": "full",
+   "cover_probability": null,
+   "covered": {
+    "bolt_1": true,
+    "bolt_2": true,
+    "bolt_3": true,
+    "bolt_4": false,
+    "lid": true
+   },
+   "deck": {
+    "x": [
+     -0.32,
+     0.32
+    ],
+    "y": [
+     -0.3,
+     0.11
+    ]
+   },
+   "decoys": 2,
+   "generator": "roboquest-puzzle-v1",
+   "item_asset": "tangerine/tangerine_2",
+   "item_xy": [
+    -0.045,
+    0.0
+   ],
+   "lid_direction": "x+",
+   "parts": {
+    "bolt_1": {
+     "axis": [
+      0.0,
+      -1.0
+     ],
+     "axis_index": 1,
+     "blocked_by": "bolt_2",
+     "cover": null,
+     "decoy": false,
+     "handle": [
+      -0.03,
+      -0.20400000000000001
+     ],
+     "kind": "bolt",
+     "length": 0.17,
+     "name": "bolt_1",
+     "notch": [
+      [
+       -0.03,
+       -0.015
+      ],
+      [
+       -0.126,
+       -0.08600000000000001
+      ]
+     ],
+     "notch_q": 0.052,
+     "notch_side": 1,
+     "open_at": null,
+     "perp_center": -0.03,
+     "range": [
+      0.0,
+      0.05
+     ],
+     "released_at": 0.03,
+     "sigma": -1,
+     "spans": [
+      [
+       [
+        -0.045,
+        -0.03
+       ],
+       [
+        -0.22400000000000003,
+        -0.054000000000000006
+       ]
+      ],
+      [
+       [
+        -0.03,
+        -0.015
+       ],
+       [
+        -0.22400000000000003,
+        -0.126
+       ]
+      ],
+      [
+       [
+        -0.03,
+        -0.015
+       ],
+       [
+        -0.08600000000000001,
+        -0.054000000000000006
+       ]
+      ]
+     ],
+     "tip_end": -0.054000000000000006,
+     "tip_engagement": 0.026
+    },
+    "bolt_2": {
+     "axis": [
+      1.0,
+      0.0
+     ],
+     "axis_index": 0,
+     "blocked_by": "bolt_3",
+     "cover": null,
+     "decoy": false,
+     "handle": [
+      0.15200000000000002,
+      -0.10600000000000001
+     ],
+     "kind": "bolt",
+     "length": 0.2,
+     "name": "bolt_2",
+     "notch": [
+      [
+       0.052000000000000005,
+       0.09200000000000001
+      ],
+      [
+       -0.12100000000000001,
+       -0.10600000000000001
+      ]
+     ],
+     "notch_q": 0.1,
+     "notch_side": -1,
+     "open_at": null,
+     "perp_center": -0.10600000000000001,
+     "range": [
+      0.0,
+      0.05
+     ],
+     "released_at": 0.02,
+     "sigma": 1,
+     "spans": [
+      [
+       [
+        -0.027999999999999997,
+        0.17200000000000001
+       ],
+       [
+        -0.10600000000000001,
+        -0.09100000000000001
+       ]
+      ],
+      [
+       [
+        -0.027999999999999997,
+        0.052000000000000005
+       ],
+       [
+        -0.12100000000000001,
+        -0.10600000000000001
+       ]
+      ],
+      [
+       [
+        0.09200000000000001,
+        0.17200000000000001
+       ],
+       [
+        -0.12100000000000001,
+        -0.10600000000000001
+       ]
+      ]
+     ],
+     "tip_end": -0.027999999999999997,
+     "tip_engagement": 0.013
+    },
+    "bolt_3": {
+     "axis": [
+      0.0,
+      -1.0
+     ],
+     "axis_index": 1,
+     "blocked_by": "bolt_4",
+     "cover": null,
+     "decoy": false,
+     "handle": [
+      0.07200000000000001,
+      -0.23800000000000002
+     ],
+     "kind": "bolt",
+     "length": 0.15,
+     "name": "bolt_3",
+     "notch": [
+      [
+       0.07200000000000001,
+       0.08700000000000001
+      ],
+      [
+       -0.17600000000000002,
+       -0.13600000000000004
+      ]
+     ],
+     "notch_q": 0.048,
+     "notch_side": 1,
+     "open_at": null,
+     "perp_center": 0.07200000000000001,
+     "range": [
+      0.0,
+      0.05
+     ],
+     "released_at": 0.02,
+     "sigma": -1,
+     "spans": [
+      [
+       [
+        0.05700000000000001,
+        0.07200000000000001
+       ],
+       [
+        -0.258,
+        -0.10800000000000001
+       ]
+      ],
+      [
+       [
+        0.07200000000000001,
+        0.08700000000000001
+       ],
+       [
+        -0.258,
+        -0.17600000000000002
+       ]
+      ],
+      [
+       [
+        0.07200000000000001,
+        0.08700000000000001
+       ],
+       [
+        -0.13600000000000004,
+        -0.10800000000000001
+       ]
+      ]
+     ],
+     "tip_end": -0.10800000000000001,
+     "tip_engagement": 0.013
+    },
+    "bolt_4": {
+     "axis": [
+      1.0,
+      0.0
+     ],
+     "axis_index": 0,
+     "blocked_by": "bolt_5",
+     "cover": null,
+     "decoy": false,
+     "handle": [
+      0.184,
+      -0.15600000000000003
+     ],
+     "kind": "bolt",
+     "length": 0.13,
+     "name": "bolt_4",
+     "notch": [
+      [
+       0.13800000000000004,
+       0.17800000000000002
+      ],
+      [
+       -0.17100000000000004,
+       -0.15600000000000003
+      ]
+     ],
+     "notch_q": 0.084,
+     "notch_side": -1,
+     "open_at": null,
+     "perp_center": -0.15600000000000003,
+     "range": [
+      0.0,
+      0.05
+     ],
+     "released_at": 0.02,
+     "sigma": 1,
+     "spans": [
+      [
+       [
+        0.07400000000000001,
+        0.20400000000000001
+       ],
+       [
+        -0.15600000000000003,
+        -0.14100000000000001
+       ]
+      ],
+      [
+       [
+        0.07400000000000001,
+        0.13800000000000004
+       ],
+       [
+        -0.17100000000000004,
+        -0.15600000000000003
+       ]
+      ],
+      [
+       [
+        0.17800000000000002,
+        0.20400000000000001
+       ],
+       [
+        -0.17100000000000004,
+        -0.15600000000000003
+       ]
+      ]
+     ],
+     "tip_end": 0.07400000000000001,
+     "tip_engagement": 0.013
+    },
+    "bolt_5": {
+     "axis": [
+      0.0,
+      -1.0
+     ],
+     "axis_index": 1,
+     "blocked_by": null,
+     "cover": null,
+     "decoy": false,
+     "handle": [
+      0.15800000000000003,
+      -0.23800000000000004
+     ],
+     "kind": "bolt",
+     "length": 0.1,
+     "name": "bolt_5",
+     "notch": null,
+     "notch_q": null,
+     "notch_side": null,
+     "open_at": null,
+     "perp_center": 0.15800000000000003,
+     "range": [
+      0.0,
+      0.05
+     ],
+     "released_at": 0.02,
+     "sigma": -1,
+     "spans": [
+      [
+       [
+        0.14300000000000002,
+        0.17300000000000004
+       ],
+       [
+        -0.258,
+        -0.15800000000000003
+       ]
+      ]
+     ],
+     "tip_end": -0.15800000000000003,
+     "tip_engagement": 0.013
+    },
+    "decoy_1": {
+     "axis": [
+      0.0,
+      1.0
+     ],
+     "axis_index": 1,
+     "blocked_by": null,
+     "cover": null,
+     "decoy": true,
+     "handle": [
+      -0.217,
+      -0.12199999999999998
+     ],
+     "kind": "decoy",
+     "length": 0.14,
+     "name": "decoy_1",
+     "notch": [
+      [
+       -0.217,
+       -0.202
+      ],
+      [
+       -0.22199999999999998,
+       -0.182
+      ]
+     ],
+     "notch_q": 0.04,
+     "notch_side": 1,
+     "open_at": null,
+     "perp_center": -0.217,
+     "range": [
+      -0.05,
+      0.05
+     ],
+     "released_at": null,
+     "sigma": 1,
+     "spans": [
+      [
+       [
+        -0.23199999999999998,
+        -0.217
+       ],
+       [
+        -0.242,
+        -0.10199999999999998
+       ]
+      ],
+      [
+       [
+        -0.217,
+        -0.202
+       ],
+       [
+        -0.242,
+        -0.22199999999999998
+       ]
+      ],
+      [
+       [
+        -0.217,
+        -0.202
+       ],
+       [
+        -0.182,
+        -0.10199999999999998
+       ]
+      ]
+     ],
+     "tip_end": -0.242
+    },
+    "decoy_2": {
+     "axis": [
+      0.0,
+      -1.0
+     ],
+     "axis_index": 1,
+     "blocked_by": null,
+     "cover": null,
+     "decoy": true,
+     "handle": [
+      -0.145,
+      -0.228
+     ],
+     "kind": "decoy",
+     "length": 0.16,
+     "name": "decoy_2",
+     "notch": null,
+     "notch_q": null,
+     "notch_side": null,
+     "open_at": null,
+     "perp_center": -0.145,
+     "range": [
+      -0.05,
+      0.05
+     ],
+     "released_at": null,
+     "sigma": -1,
+     "spans": [
+      [
+       [
+        -0.15999999999999998,
+        -0.13
+       ],
+       [
+        -0.248,
+        -0.088
+       ]
+      ]
+     ],
+     "tip_end": -0.088
+    },
+    "lid": {
+     "axis": [
+      1.0,
+      0.0
+     ],
+     "blocked_by": "bolt_1",
+     "blocker_seed": {
+      "axis_index": 1,
+      "perp_center": -0.03,
+      "sigma": -1,
+      "tip_end": -0.054000000000000006
+     },
+     "cover": null,
+     "decoy": false,
+     "direction": "x+",
+     "handle": [
+      0.05,
+      -0.02
+     ],
+     "kind": "lid",
+     "name": "lid",
+     "notch": [
+      [
+       -0.05,
+       -0.009999999999999998
+      ],
+      [
+       -0.08,
+       -0.05
+      ]
+     ],
+     "open_at": 0.18000000000000002,
+     "range": [
+      0.0,
+      0.2
+     ],
+     "released_at": null,
+     "side": null,
+     "slot": -0.03,
+     "spans": [
+      [
+       [
+        -0.12,
+        0.12
+       ],
+       [
+        -0.05,
+        0.08
+       ]
+      ],
+      [
+       [
+        -0.12,
+        -0.05
+       ],
+       [
+        -0.08,
+        -0.05
+       ]
+      ],
+      [
+       [
+        -0.009999999999999998,
+        0.12
+       ],
+       [
+        -0.08,
+        -0.05
+       ]
+      ]
+     ]
+    }
+   },
+   "plate": {
+    "clearance_m": 0.004,
+    "hides": [
+     "bolt_1",
+     "bolt_2",
+     "bolt_3",
+     "lid"
+    ],
+    "leg_half": 0.009,
+    "leg_z": [
+     0.075,
+     0.092
+    ],
+    "legs": [
+     [
+      -0.096,
+      -0.0955
+     ],
+     [
+      -0.09,
+      -0.142
+     ],
+     [
+      0.0422,
+      -0.172
+     ],
+     [
+      0.0422,
+      -0.135
+     ]
+    ],
+    "lintel_z": [
+     0.0895,
+     0.092
+    ],
+    "lintels": [
+     [
+      [
+       -0.105,
+       -0.101
+      ],
+      [
+       -0.082,
+       -0.072
+      ]
+     ],
+     [
+      [
+       -0.047,
+       -0.013
+      ],
+      [
+       -0.151,
+       -0.147
+      ]
+     ],
+     [
+      [
+       0.011,
+       0.015
+      ],
+      [
+       -0.077,
+       -0.072
+      ]
+     ],
+     [
+      [
+       0.015,
+       0.097
+      ],
+      [
+       -0.081,
+       -0.077
+      ]
+     ],
+     [
+      [
+       0.055,
+       0.089
+      ],
+      [
+       -0.181,
+       -0.177
+      ]
+     ],
+     [
+      [
+       0.093,
+       0.097
+      ],
+      [
+       -0.126,
+       -0.089
+      ]
+     ],
+     [
+      [
+       0.093,
+       0.097
+      ],
+      [
+       -0.082,
+       -0.077
+      ]
+     ],
+     [
+      [
+       0.098,
+       0.102
+      ],
+      [
+       -0.173,
+       -0.139
+      ]
+     ]
+    ],
+    "rects": [
+     [
+      [
+       -0.10500000000000004,
+       8.673617379884035e-19
+      ],
+      [
+       -0.14000000000000004,
+       -0.046
+      ]
+     ],
+     [
+      [
+       -0.09900000000000002,
+       0.015000000000000003
+      ],
+      [
+       -0.15100000000000002,
+       -0.061000000000000006
+      ]
+     ],
+     [
+      [
+       0.0070000000000000106,
+       0.097
+      ],
+      [
+       -0.16600000000000004,
+       -0.07699999999999999
+      ]
+     ],
+     [
+      [
+       0.018000000000000013,
+       0.10200000000000001
+      ],
+      [
+       -0.18100000000000005,
+       -0.126
+      ]
+     ]
+    ],
+    "skirt_z": [
+     0.075,
+     0.098
+    ],
+    "skirts": [],
+    "wall_z": [
+     0.075,
+     0.092
+    ],
+    "walls": [
+     [
+      [
+       -0.105,
+       -0.101
+      ],
+      [
+       -0.14,
+       -0.082
+      ]
+     ],
+     [
+      [
+       -0.105,
+       -0.099
+      ],
+      [
+       -0.14,
+       -0.136
+      ]
+     ],
+     [
+      [
+       -0.099,
+       -0.095
+      ],
+      [
+       -0.151,
+       -0.14
+      ]
+     ],
+     [
+      [
+       -0.099,
+       -0.047
+      ],
+      [
+       -0.151,
+       -0.147
+      ]
+     ],
+     [
+      [
+       -0.013,
+       0.007
+      ],
+      [
+       -0.151,
+       -0.147
+      ]
+     ],
+     [
+      [
+       0.007,
+       0.011
+      ],
+      [
+       -0.166,
+       -0.151
+      ]
+     ],
+     [
+      [
+       0.007,
+       0.018
+      ],
+      [
+       -0.166,
+       -0.162
+      ]
+     ],
+     [
+      [
+       0.018,
+       0.022
+      ],
+      [
+       -0.181,
+       -0.166
+      ]
+     ],
+     [
+      [
+       0.018,
+       0.055
+      ],
+      [
+       -0.181,
+       -0.177
+      ]
+     ],
+     [
+      [
+       0.089,
+       0.102
+      ],
+      [
+       -0.181,
+       -0.177
+      ]
+     ],
+     [
+      [
+       0.093,
+       0.097
+      ],
+      [
+       -0.089,
+       -0.082
+      ]
+     ],
+     [
+      [
+       0.097,
+       0.102
+      ],
+      [
+       -0.13,
+       -0.126
+      ]
+     ],
+     [
+      [
+       0.098,
+       0.102
+      ],
+      [
+       -0.181,
+       -0.173
+      ]
+     ],
+     [
+      [
+       0.098,
+       0.102
+      ],
+      [
+       -0.139,
+       -0.126
+      ]
+     ]
+    ],
+    "z": [
+     0.092,
+     0.098
+    ]
+   },
+   "release_order": [
+    "bolt_5",
+    "bolt_4",
+    "bolt_3",
+    "bolt_2",
+    "bolt_1",
+    "lid"
+   ],
+   "relock": {
+    "bolt": "bolt_1",
+    "decoy": "decoy_1",
+    "k": 1
+   },
+   "relock_requested": true,
+   "seed": 194678869,
+   "signature": "x+-k5-startRfront-cov4",
+   "sliders": 7,
+   "tier": "full",
+   "tray_asset": "tray/tray_0"
+  },
+  "layout_seed": 194678869,
+  "placement": {
+   "chest_island": {
+    "attempts": 9,
+    "xy": [
+     -0.1055,
+     0.0728
+    ],
+    "yaw": 0.1717
+   },
+   "chest_wall": {
+    "attempts": 24,
+    "xy": [
+     -0.1523,
+     0.0929
+    ],
+    "yaw": 0.0887
+   },
+   "submit": [
+    0.42,
+    -0.3
+   ],
+   "tray": [
+    0.42,
+    -0.04
+   ]
+  },
+  "relock": {
+   "bolt": "bolt_1",
+   "decoy": "decoy_1",
+   "k": 1
+  },
+  "relock_drawn": true,
+  "show_count": false
+ },
+ "split": "dev",
+ "split_key": "x+-k5",
+ "style_id": 6,
+ "task": "puzzle_box"
+}

@@ -1,0 +1,216 @@
+{
+ "contract_version": "stamps-composition-kitchen-v3",
+ "factors": {
+  "composition": 2,
+  "kitchen_layout": 48,
+  "kitchen_style": 1,
+  "observability": "uncover"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "die_dots": [
+    3,
+    4,
+    2
+   ],
+   "placement": {
+    "min_board_footprint_margin_m": 0.01458,
+    "min_board_gap_m": 0.01262,
+    "min_board_submit_gap_m": 0.03489,
+    "min_stamp_gap_m": 0.07288,
+    "min_stamp_keepout_gap_m": 0.05763,
+    "min_stamp_region_margin_m": 0.02758,
+    "scratch_half_m": 0.1
+   },
+   "problems": [],
+   "recorded_solution_reachable": true,
+   "sampler_attempts": 1,
+   "solution_count": 1,
+   "solutions": [
+    [
+     [
+      0,
+      2
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "target_dots": 4,
+   "target_id": 73
+  }
+ },
+ "generator_version": "v3",
+ "goal": "There are 3 stamps on the counters in this kitchen. Stamp the final board so it shows exactly the pattern on the reference card, then press Submit. The final board is the blue-bordered one with the printed 3x3 grid; the green-bordered reference card is not for stamping. The round self-inking stamps stand face down on the work surface. Each prints a fixed pattern of dots in whatever direction it is held, and the unmarked housings show neither the pattern nor which way it points, so try them on the tan scratch board. Ink stays where it lands, on the scratch board and on the final board alike. Fill exactly the reference card's grid cells with no ink outside the final board's grid, put every stamp back down on the counter and let go, then press the red SUBMIT button. Your first submission ends the episode; a wrong submission or no submission fails. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "708614cd8e1d15a2",
+ "layout_id": 48,
+ "origin": {
+  "cell": {
+   "composition": 2,
+   "observability": "uncover"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T05:04:12",
+  "registry": "internal",
+  "seed": 3200101
+ },
+ "seed": 3200101,
+ "spec": {
+  "board_yaw": {
+   "final": -0.061548,
+   "reference": -0.056059,
+   "scratch": 0.025631
+  },
+  "composition": 2,
+  "contract_version": "stamps-composition-kitchen-v3",
+  "handle_rgba": [
+   [
+    0.72,
+    0.55,
+    0.32,
+    1.0
+   ],
+   [
+    0.3,
+    0.45,
+    0.68,
+    1.0
+   ],
+   [
+    0.62,
+    0.34,
+    0.4,
+    1.0
+   ]
+  ],
+  "hidden": [
+   {
+    "cover": "cloche_large",
+    "mode": "cover",
+    "object": "stamp_2"
+   }
+  ],
+  "hidden_plan": {
+   "flavour_drawn": "place",
+   "flavour_fallback": true,
+   "look": [],
+   "object_candidates": [
+    [
+     "stamp_2",
+     "cloche_large"
+    ]
+   ],
+   "place_candidates": [],
+   "rescatter": null,
+   "uncover_flavour": "object"
+  },
+  "initial_yaw_rad": [
+   1.288834,
+   1.395764,
+   1.11278
+  ],
+  "mask_ids": [
+   8,
+   9,
+   2
+  ],
+  "observability": "uncover",
+  "paper_rgb": {
+   "final": [
+    235,
+    236,
+    231
+   ],
+   "reference": [
+    238,
+    240,
+    244
+   ],
+   "scratch": [
+    238,
+    240,
+    244
+   ]
+  },
+  "placement": {
+   "final": [
+    0.327288,
+    -0.027828
+   ],
+   "reference": [
+    0.352625,
+    0.160067
+   ],
+   "scratch": [
+    -0.219131,
+    0.051041
+   ],
+   "submit": [
+    0.345,
+    -0.198
+   ]
+  },
+  "sampler_attempts": 1,
+  "scratch_cells": 4,
+  "show_count": true,
+  "sole_rgba": [
+   0.26,
+   0.3,
+   0.28,
+   1.0
+  ],
+  "solution": [
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    3
+   ]
+  ],
+  "stamp_count": 3,
+  "stamp_xy": [
+   [
+    -0.265218,
+    -0.171846
+   ],
+   [
+    -0.03652,
+    -0.202416
+   ],
+   [
+    0.097002,
+    -0.063221
+   ]
+  ],
+  "target": [
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    1
+   ]
+  ],
+  "target_bits": 394,
+  "target_id": 73,
+  "unique": true
+ },
+ "split": "dev",
+ "split_key": "t73-k2",
+ "style_id": 1,
+ "task": "stamps"
+}

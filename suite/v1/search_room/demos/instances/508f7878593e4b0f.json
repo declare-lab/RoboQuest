@@ -1,0 +1,105 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 26,
+  "kitchen_style": 6,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 11,
+    "doors": {
+     "240": 3,
+     "300": 1
+    },
+    "drawers": {
+     "160": 4,
+     "185": 2,
+     "368": 1
+    },
+    "free": 84,
+    "open": 30
+   },
+   "capacity_layout": 26,
+   "closers": [
+    2,
+    3
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the yellow water bottle and the blue water bottle on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "508f7878593e4b0f",
+ "layout_id": 26,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T11:38:28",
+  "registry": "internal",
+  "seed": 4000540
+ },
+ "seed": 4000540,
+ "spec": {
+  "build_seed": 555637305,
+  "closers": [
+   2,
+   3
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 897836409,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "mug_blue",
+   "tin_yellow"
+  ],
+  "layout_id": 26,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1099526393,
+  "set_size": 2,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "can_green",
+   "can_red",
+   "mug_red",
+   "tin_green"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-open+open",
+ "style_id": 6,
+ "task": "search_room"
+}

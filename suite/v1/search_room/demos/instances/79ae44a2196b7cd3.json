@@ -1,0 +1,108 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 8,
+  "kitchen_layout": 17,
+  "kitchen_style": 3,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 20,
+    "doors": {
+     "240": 6
+    },
+    "drawers": {
+     "160": 2,
+     "185": 10,
+     "328": 3
+    },
+    "free": 112,
+    "open": 36
+   },
+   "capacity_layout": 17,
+   "closers": [
+    2,
+    3
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "covered",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the green tin, the red can and the yellow water bottle on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "79ae44a2196b7cd3",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "compartment_count": 8,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T13:21:49",
+  "registry": "internal",
+  "seed": 4501167
+ },
+ "seed": 4501167,
+ "spec": {
+  "build_seed": 491420329,
+  "closers": [
+   2,
+   3
+  ],
+  "compartment_count": 8,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1610224048,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_blue",
+   "can_green"
+  ],
+  "layout_id": 17,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1046222781,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "tin_green"
+   },
+   {
+    "kind": "covered",
+    "object": "can_red"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "mug_blue",
+   "mug_red",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-covered+open+open",
+ "style_id": 3,
+ "task": "search_room"
+}

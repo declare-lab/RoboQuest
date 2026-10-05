@@ -1,0 +1,51 @@
+task,model,episodes,successes,mean_progress
+blackout_search,GPT-6 Astra,50,0,0.237
+blackout_search,Claude Opus 5.5,50,0,0.174
+blackout_search,GPT-6.1 Sol,50,0,0.185
+blackout_search,Claude Fable 5.1,50,0,0.171
+blackout_search,Gemini 3.8 Flash,50,0,0.044
+locked_storage,GPT-6 Astra,50,14,0.529
+locked_storage,Claude Opus 5.5,50,3,0.352
+locked_storage,GPT-6.1 Sol,50,6,0.385
+locked_storage,Claude Fable 5.1,50,4,0.217
+locked_storage,Gemini 3.8 Flash,50,0,0.092
+marked_mugs,GPT-6 Astra,50,19,0.697
+marked_mugs,Claude Opus 5.5,50,8,0.514
+marked_mugs,GPT-6.1 Sol,50,3,0.372
+marked_mugs,Claude Fable 5.1,50,6,0.318
+marked_mugs,Gemini 3.8 Flash,50,0,0.007
+odd_parcel,GPT-6 Astra,50,5,0.223
+odd_parcel,Claude Opus 5.5,50,4,0.097
+odd_parcel,GPT-6.1 Sol,50,1,0.067
+odd_parcel,Claude Fable 5.1,50,1,0.090
+odd_parcel,Gemini 3.8 Flash,50,1,0.020
+painted_cubes,GPT-6 Astra,50,15,0.748
+painted_cubes,Claude Opus 5.5,50,7,0.592
+painted_cubes,GPT-6.1 Sol,50,9,0.692
+painted_cubes,Claude Fable 5.1,50,7,0.615
+painted_cubes,Gemini 3.8 Flash,50,1,0.113
+puzzle_box,GPT-6 Astra,50,48,0.996
+puzzle_box,Claude Opus 5.5,50,34,0.855
+puzzle_box,GPT-6.1 Sol,50,36,0.909
+puzzle_box,Claude Fable 5.1,50,35,0.810
+puzzle_box,Gemini 3.8 Flash,50,6,0.330
+search_room,GPT-6 Astra,50,0,0.310
+search_room,Claude Opus 5.5,50,0,0.267
+search_room,GPT-6.1 Sol,50,0,0.194
+search_room,Claude Fable 5.1,50,0,0.192
+search_room,Gemini 3.8 Flash,50,1,0.175
+stamps,GPT-6 Astra,50,7,0.553
+stamps,Claude Opus 5.5,50,1,0.390
+stamps,GPT-6.1 Sol,50,4,0.294
+stamps,Claude Fable 5.1,50,1,0.369
+stamps,Gemini 3.8 Flash,50,0,0.034
+unfamiliar_containers,GPT-6 Astra,50,3,0.322
+unfamiliar_containers,Claude Opus 5.5,50,0,0.172
+unfamiliar_containers,GPT-6.1 Sol,50,0,0.231
+unfamiliar_containers,Claude Fable 5.1,50,0,0.170
+unfamiliar_containers,Gemini 3.8 Flash,50,0,0.063
+wobbly_stand,GPT-6 Astra,50,5,0.186
+wobbly_stand,Claude Opus 5.5,50,12,0.322
+wobbly_stand,GPT-6.1 Sol,50,2,0.073
+wobbly_stand,Claude Fable 5.1,50,3,0.144
+wobbly_stand,Gemini 3.8 Flash,50,1,0.046

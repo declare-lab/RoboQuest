@@ -1,0 +1,214 @@
+{
+ "contract_version": "stamps-composition-kitchen-v3",
+ "factors": {
+  "composition": 2,
+  "kitchen_layout": 26,
+  "kitchen_style": 7,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "die_dots": [
+    4,
+    3,
+    3
+   ],
+   "placement": {
+    "min_board_footprint_margin_m": 0.01419,
+    "min_board_gap_m": 0.03481,
+    "min_board_submit_gap_m": 0.01882,
+    "min_stamp_gap_m": 0.07596,
+    "min_stamp_keepout_gap_m": 0.05151,
+    "min_stamp_region_margin_m": 0.0095,
+    "scratch_half_m": 0.117
+   },
+   "problems": [],
+   "recorded_solution_reachable": true,
+   "sampler_attempts": 2,
+   "solution_count": 1,
+   "solutions": [
+    [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "target_dots": 6,
+   "target_id": 89
+  },
+  "scene": {
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (EGL device match failed in this tree)",
+   "g35": true
+  }
+ },
+ "generator_version": "v3",
+ "goal": "There are 3 stamps on the counters in this kitchen. Stamp the final board so it shows exactly the pattern on the reference card, then press Submit. The final board is the blue-bordered one with the printed 3x3 grid; the green-bordered reference card is not for stamping. The round self-inking stamps stand face down on the work surface. Each prints a fixed pattern of dots in whatever direction it is held, and the unmarked housings show neither the pattern nor which way it points, so try them on the tan scratch board. Ink stays where it lands, on the scratch board and on the final board alike. Fill exactly the reference card's grid cells with no ink outside the final board's grid, put every stamp back down on the counter and let go, then press the red SUBMIT button. Your first submission ends the episode; a wrong submission or no submission fails. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "9ca4d3a627d679dd",
+ "layout_id": 26,
+ "origin": {
+  "cell": {
+   "composition": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T00:50:49",
+  "note": "2026-10-04 extra",
+  "registry": "internal",
+  "seed": 6100109,
+  "staging": "internal"
+ },
+ "seed": 6100109,
+ "spec": {
+  "board_yaw": {
+   "final": -0.038251,
+   "reference": -0.028131,
+   "scratch": 0.072158
+  },
+  "composition": 2,
+  "contract_version": "stamps-composition-kitchen-v3",
+  "handle_rgba": [
+   [
+    0.66,
+    0.62,
+    0.3,
+    1.0
+   ],
+   [
+    0.72,
+    0.55,
+    0.32,
+    1.0
+   ],
+   [
+    0.46,
+    0.4,
+    0.6,
+    1.0
+   ]
+  ],
+  "hidden": [],
+  "hidden_plan": {
+   "flavour_drawn": null,
+   "flavour_fallback": false,
+   "look": [],
+   "object_candidates": [],
+   "place_candidates": [],
+   "rescatter": null,
+   "uncover_flavour": null
+  },
+  "initial_yaw_rad": [
+   0.172109,
+   -0.661257,
+   1.369173
+  ],
+  "mask_ids": [
+   9,
+   7,
+   4
+  ],
+  "observability": "visible",
+  "paper_rgb": {
+   "final": [
+    235,
+    236,
+    231
+   ],
+   "reference": [
+    248,
+    244,
+    238
+   ],
+   "scratch": [
+    235,
+    236,
+    231
+   ]
+  },
+  "placement": {
+   "final": [
+    0.329473,
+    -0.045669
+   ],
+   "reference": [
+    0.355367,
+    0.165192
+   ],
+   "scratch": [
+    -0.214722,
+    0.022358
+   ],
+   "submit": [
+    0.345,
+    -0.198
+   ]
+  },
+  "sampler_attempts": 2,
+  "scratch_cells": 5,
+  "show_count": true,
+  "sole_rgba": [
+   0.24,
+   0.27,
+   0.3,
+   1.0
+  ],
+  "solution": [
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    2
+   ]
+  ],
+  "stamp_count": 3,
+  "stamp_xy": [
+   [
+    -0.270528,
+    -0.214794
+   ],
+   [
+    -0.019838,
+    -0.183298
+   ],
+   [
+    0.172561,
+    -0.220501
+   ]
+  ],
+  "target": [
+   [
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    1,
+    1
+   ]
+  ],
+  "target_bits": 407,
+  "target_id": 89,
+  "unique": true
+ },
+ "split": "dev",
+ "split_key": "t89-k2",
+ "style_id": 7,
+ "task": "stamps"
+}

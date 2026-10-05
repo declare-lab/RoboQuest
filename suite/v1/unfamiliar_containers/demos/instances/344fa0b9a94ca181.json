@@ -1,0 +1,192 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 12,
+  "kitchen_style": 5,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closer_windows": {
+    "0": 256
+   },
+   "closers": [
+    0
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "lift_lid",
+    "lift_lid"
+   ],
+   "holders": [
+    1,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "lift_lid",
+    "slide_lid",
+    "slide_side"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "front",
+    "left",
+    "top"
+   ]
+  },
+  "scene": {
+   "build_and_clear_access_preflight": true,
+   "closer_rule": true,
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (GPUs in use; EGL not touched)",
+   "g35": true
+  }
+ },
+ "generator_version": "v6",
+ "goal": "There are 4 boxes on the counters in this kitchen. A kiwi and a lime are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "344fa0b9a94ca181",
+ "layout_id": 12,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T18:08:52",
+  "note": "2026-10-04 layouts 12/20 batch b",
+  "registry": "internal",
+  "seed": 7130590,
+  "staging": "internal"
+ },
+ "seed": 7130590,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/wood_planks_wall.png",
+   "knob_rgb": [
+    0.42,
+    0.42,
+    0.45
+   ],
+   "panel_texture": "wood/wood_grain_1.png"
+  },
+  "bowl_xy": [
+   -0.206968,
+   -0.174724
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 0.01242,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 0.015583,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 1.614717,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "right",
+    "dummy_face": "front",
+    "dummy_side": "left",
+    "face": "right",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "slide_side",
+    "side": "front",
+    "yaw": 4.719282,
+    "yaw_quarter": 3
+   }
+  ],
+  "closers": [
+   0
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "lift_lid",
+   "lift_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   1,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/kiwi/kiwi_0/model.xml",
+   "objects/objaverse/lime/lime_1/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "kiwi",
+   "lime"
+  ],
+  "kitchen_layout": 12,
+  "kitchen_style": 5,
+  "layout_seed": 632226138,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   3,
+   2,
+   0,
+   1
+  ],
+  "placement_seed": 464305298,
+  "show_count": true,
+  "submit_xy": [
+   0.175889,
+   -0.183707
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "lift_lid+lift_lid",
+ "style_id": 5,
+ "task": "unfamiliar_containers"
+}

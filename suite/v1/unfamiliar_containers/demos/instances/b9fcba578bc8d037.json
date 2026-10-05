@@ -1,0 +1,182 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 10,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    0,
+    1
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "flip_lid",
+    "door"
+   ],
+   "holders": [
+    2,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "door",
+    "flip_lid",
+    "press_door",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "front",
+    "right",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 4 boxes on the counters in this kitchen. A lemon and a kiwi are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "b9fcba578bc8d037",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T05:12:45",
+  "registry": "internal",
+  "seed": 3107289
+ },
+ "seed": 3107289,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/varnished_wood_planks.png",
+   "knob_rgb": [
+    0.3,
+    0.22,
+    0.18
+   ],
+   "panel_texture": "wood/wood_grain_3.png"
+  },
+  "bowl_xy": [
+   -0.206433,
+   -0.168972
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "left",
+    "index": 0,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 3.18183,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "right",
+    "face": "right",
+    "hinge": "left",
+    "index": 1,
+    "mechanism": "press_door",
+    "side": "front",
+    "yaw": 4.668639,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "left",
+    "dummy_face": "front",
+    "dummy_side": "right",
+    "face": "top",
+    "hinge": "left",
+    "index": 2,
+    "mechanism": "flip_lid",
+    "side": "top",
+    "yaw": 1.559658,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "back",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "door",
+    "side": "back",
+    "yaw": 0.021123,
+    "yaw_quarter": 0
+   }
+  ],
+  "closers": [
+   0,
+   1
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "flip_lid",
+   "door"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   2,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/lemon/lemon_0/model.xml",
+   "objects/objaverse/kiwi/kiwi_0/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "lemon",
+   "kiwi"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 10,
+  "layout_seed": 1860199420,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   3,
+   2,
+   1,
+   0
+  ],
+  "placement_seed": 1515688510,
+  "show_count": true,
+  "submit_xy": [
+   0.185872,
+   -0.188456
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "door+flip_lid",
+ "style_id": 10,
+ "task": "unfamiliar_containers"
+}

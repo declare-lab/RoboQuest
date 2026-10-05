@@ -1,0 +1,107 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 12,
+  "kitchen_style": 3,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 17,
+    "doors": {
+     "240": 2,
+     "270": 2
+    },
+    "drawers": {
+     "118": 2,
+     "177": 1,
+     "194": 1
+    },
+    "free": 88,
+    "open": 26
+   },
+   "capacity_layout": 12,
+   "closers": [
+    2
+   ],
+   "hidden_compartments_needed": 4,
+   "problems": [],
+   "target_kinds": [
+    "drawer",
+    "covered",
+    "drawer"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the red can, the blue mug and the green can on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "c884567a2d7ad7a3",
+ "layout_id": 12,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T12:50:46",
+  "registry": "internal",
+  "seed": 4100758
+ },
+ "seed": 4100758,
+ "spec": {
+  "build_seed": 1593395847,
+  "closers": [
+   2
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1627924060,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "mug_red",
+   "tin_green"
+  ],
+  "layout_id": 12,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 490398951,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "drawer",
+    "object": "can_red"
+   },
+   {
+    "kind": "covered",
+    "object": "mug_blue"
+   },
+   {
+    "kind": "drawer",
+    "object": "can_green"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "bottle_yellow",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-covered+drawer+drawer",
+ "style_id": 3,
+ "task": "search_room"
+}

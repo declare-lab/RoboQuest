@@ -1,0 +1,186 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 17,
+  "kitchen_style": 10,
+  "observability": "look"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [],
+   "decoys": [
+    1
+   ],
+   "holder_mechanisms": [
+    "drawer",
+    "drawer"
+   ],
+   "holders": [
+    0,
+    3
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "drawer",
+    "lift_lid",
+    "sealed"
+   ],
+   "observability": {
+    "hidden": [
+     "box2"
+    ],
+    "level": "look"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "left",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are boxes on the counters in this kitchen. A kiwi and an egg are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "7bc966da0b5e0fe6",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "look"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T08:40:03",
+  "registry": "internal",
+  "seed": 3006342
+ },
+ "seed": 3006342,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/light_wood_planks.png",
+   "knob_rgb": [
+    0.3,
+    0.22,
+    0.18
+   ],
+   "panel_texture": "wood/wood_grain_1.png"
+  },
+  "bowl_xy": [
+   -0.204572,
+   -0.165618
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "front",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "drawer",
+    "side": "left",
+    "yaw": 4.763765,
+    "yaw_quarter": 3
+   },
+   {
+    "direction": "right",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "front",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "sealed",
+    "side": "back",
+    "yaw": 3.186329,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "back",
+    "face": "top",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 0.041009,
+    "yaw_quarter": 0
+   },
+   {
+    "direction": "right",
+    "dummy_face": "back",
+    "dummy_side": "left",
+    "face": "right",
+    "hinge": "left",
+    "index": 3,
+    "mechanism": "drawer",
+    "side": "back",
+    "yaw": 1.586864,
+    "yaw_quarter": 1
+   }
+  ],
+  "closers": [],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 1,
+  "decoys": [
+   1
+  ],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "annex",
+    "object": "box2"
+   }
+  ],
+  "holder_mechanisms": [
+   "drawer",
+   "drawer"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   3
+  ],
+  "item_assets": [
+   "objects/objaverse/kiwi/kiwi_0/model.xml",
+   "objects/objaverse/egg/egg_1/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "kiwi",
+   "egg"
+  ],
+  "kitchen_layout": 17,
+  "kitchen_style": 10,
+  "layout_seed": 731373565,
+  "min_spacing": 0.55,
+  "observability": "look",
+  "placement_order": [
+   2,
+   3,
+   0,
+   1
+  ],
+  "placement_seed": 413965914,
+  "show_count": false,
+  "submit_xy": [
+   0.174587,
+   -0.196332
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "drawer+drawer",
+ "style_id": 10,
+ "task": "unfamiliar_containers"
+}

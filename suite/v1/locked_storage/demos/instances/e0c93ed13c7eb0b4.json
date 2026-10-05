@@ -1,0 +1,126 @@
+{
+ "contract_version": "locked-storage-kitchen-v2",
+ "factors": {
+  "chain_depth": 1,
+  "dead_end": 0,
+  "double_door": false,
+  "kitchen_layout": 31,
+  "kitchen_style": 10
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity_layout": 31,
+   "chain_depth": 1,
+   "chain_kinds": [
+    "drawer"
+   ],
+   "dead_end": 0,
+   "dead_end_kind": null,
+   "double_door": false,
+   "lock_colours": [
+    "white"
+   ],
+   "problems": [],
+   "rules": {
+    "bottom_drawers": false,
+    "counter_band": {
+     "island_any": true,
+     "wall_front_fraction": 0.6666666666666666
+    },
+    "door_class": "HingeCabinet",
+    "door_target_depth_m": 0.1,
+    "door_target_depth_max_m": 0.2,
+    "floor_min_m": 0.4,
+    "single_cabinets": false
+   },
+   "split_key": "d1-drawers-white",
+   "target_depth_m": null
+  }
+ },
+ "generator_version": "v3",
+ "goal": "Collect the green can on the tray, then press Submit. It may be anywhere in this kitchen; some compartments may not open, and a compartment with a coloured lock plate opens only while the token of that colour rests on its reader pad. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "e0c93ed13c7eb0b4",
+ "layout_id": 31,
+ "origin": {
+  "cell": {
+   "chain_depth": 1,
+   "dead_end": 0,
+   "double_door": false
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T00:56:29",
+  "registry": "internal",
+  "seed": 3000307
+ },
+ "seed": 3000307,
+ "spec": {
+  "build_seed": 2139166595,
+  "chain_depth": 1,
+  "chain_kinds": [
+   "drawer"
+  ],
+  "closer_count": 0,
+  "closer_seed": 704357308,
+  "compartment_count": 6,
+  "contract_version": "locked-storage-kitchen-v2",
+  "dead_end": 0,
+  "dead_end_kind": null,
+  "dead_end_token": null,
+  "double_door": false,
+  "hidden_distractors": [
+   "can_red",
+   "tin_green"
+  ],
+  "layout_id": 31,
+  "lock_colours": [
+   "white"
+  ],
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1231700209,
+  "rules": {
+   "bottom_drawers": false,
+   "counter_band": {
+    "island_any": true,
+    "wall_front_fraction": 0.6666666666666666
+   },
+   "door_class": "HingeCabinet",
+   "door_target_depth_m": 0.1,
+   "door_target_depth_max_m": 0.2,
+   "floor_min_m": 0.4,
+   "single_cabinets": false
+  },
+  "set_size": 1,
+  "show_count": true,
+  "target_depth_m": null,
+  "targets": [
+   {
+    "kind": "drawer",
+    "object": "can_green"
+   }
+  ],
+  "token_seed": 166708373,
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "bottle_yellow",
+   "mug_blue",
+   "mug_red",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "d1-drawers-white",
+ "style_id": 10,
+ "task": "locked_storage"
+}

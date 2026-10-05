@@ -1,0 +1,235 @@
+{
+ "contract_version": "odd-parcel-kitchen-v3",
+ "factors": {
+  "kitchen_layout": 17,
+  "kitchen_style": 5,
+  "observability": "look",
+  "parcel_count": 6
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_clearance_per_side_m": [
+    0.015,
+    0.015
+   ],
+   "box_inner_m": [
+    0.1,
+    0.13
+   ],
+   "hidden": [
+    {
+     "cover": null,
+     "mode": "occluder",
+     "object": "parcel_4"
+    }
+   ],
+   "min_footprint_margin_m": 0.037,
+   "min_parcel_gap_m": 0.0222,
+   "min_parcel_keepout_gap_m": 0.04664,
+   "min_parcel_region_margin_m": 0.02087,
+   "min_stacked_gap_m": 0.02292,
+   "odd_count": 2,
+   "odd_tilt_static_deg": {
+    "b": 11.241431940466752,
+    "s": 6.744859164280051
+   },
+   "pan_inner_m": [
+    0.252,
+    0.152
+   ],
+   "parcel_count": 6,
+   "problems": [],
+   "stacks": 1
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are 6 parcels on the counters in this kitchen. Most of these parcels weigh the same; fewer than half weigh differently. Put every parcel that weighs differently in the box and nothing else, leave the balance where it stands, then press Submit. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "cd19822269e3a4b8",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "observability": "look",
+   "parcel_count": 6
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T04:16:22",
+  "registry": "internal",
+  "seed": 3400062
+ },
+ "seed": 3400062,
+ "spec": {
+  "balance": {
+   "pan_capacity": 3,
+   "xy": [
+    -0.184541,
+    0.144551
+   ],
+   "yaw": -0.098242
+  },
+  "balance_textures": {
+   "beam": "metals/brass.png",
+   "frame": "metals/brass.png",
+   "pan": "metals/brass.png",
+   "plate": "flat/warm_white.png"
+  },
+  "base_mass_kg": 0.25,
+  "box": {
+   "inner_xy": [
+    0.1,
+    0.13
+   ],
+   "outer_half": [
+    0.058,
+    0.07300000000000001
+   ],
+   "style": 1026244287,
+   "xy": [
+    0.4,
+    0.02
+   ]
+  },
+  "contract_version": "odd-parcel-kitchen-v3",
+  "delta_kg": {
+   "b": 0.2,
+   "s": 0.12
+  },
+  "direction_pattern": "H",
+  "footprint": [
+   1.2,
+   0.6
+  ],
+  "hidden": [
+   {
+    "cover": null,
+    "mode": "occluder",
+    "object": "parcel_4"
+   }
+  ],
+  "hidden_draw": {
+   "cover_kind": null,
+   "flavour": null,
+   "flavour_requested": null,
+   "look_count": 1
+  },
+  "magnitude_pattern": "diff",
+  "observability": "look",
+  "odd_count": 2,
+  "odd_indices": [
+   2,
+   4
+  ],
+  "parcel_count": 6,
+  "parcel_half": [
+   0.035,
+   0.05,
+   0.025
+  ],
+  "parcel_texture": "wood/warm_wood_planks.png",
+  "parcel_tint": [
+   0.86,
+   0.88,
+   0.93,
+   1.0
+  ],
+  "parcels": [
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_0",
+    "level": 1,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": "parcel_2",
+    "xy": [
+     -0.21523,
+     -0.086286
+    ],
+    "yaw": -1.977874
+   },
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_1",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     0.167503,
+     -0.066793
+    ],
+    "yaw": 1.022975
+   },
+   {
+    "delta_key": "b",
+    "direction": "H",
+    "id": "parcel_2",
+    "level": 0,
+    "mass_kg": 0.45,
+    "odd": true,
+    "on": null,
+    "xy": [
+     -0.215432,
+     -0.08549
+    ],
+    "yaw": -1.983119
+   },
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_3",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     -0.497144,
+     -0.13942
+    ],
+    "yaw": 2.059346
+   },
+   {
+    "delta_key": "s",
+    "direction": "H",
+    "id": "parcel_4",
+    "level": 0,
+    "mass_kg": 0.37,
+    "odd": true,
+    "on": null,
+    "xy": [
+     -0.11402,
+     -0.208968
+    ],
+    "yaw": -1.663964
+   },
+   {
+    "delta_key": null,
+    "direction": null,
+    "id": "parcel_5",
+    "level": 0,
+    "mass_kg": 0.25,
+    "odd": false,
+    "on": null,
+    "xy": [
+     -0.359256,
+     -0.101916
+    ],
+    "yaw": -2.074532
+   }
+  ],
+  "show_count": true,
+  "stacks": 1,
+  "submit": {
+   "xy": [
+    0.4,
+    -0.22
+   ]
+  }
+ },
+ "split": "dev",
+ "split_key": "p6-o2-H-diff",
+ "style_id": 5,
+ "task": "odd_parcel"
+}

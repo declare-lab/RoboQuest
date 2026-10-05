@@ -1,0 +1,129 @@
+{
+ "contract_version": "blackout-search-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 49,
+  "kitchen_style": 9,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 20,
+    "doors": {
+     "240": 2
+    },
+    "drawers": {
+     "160": 11,
+     "202": 2
+    },
+    "free": 98,
+    "open": 30
+   },
+   "capacity_layout": 49,
+   "closers": [],
+   "hidden_compartments_needed": 2,
+   "hiding_rule": {
+    "doors": false,
+    "floor_min_m": 0.4,
+    "kinds": [
+     "drawer",
+     "open",
+     "covered"
+    ]
+   },
+   "high_drawers": {
+    "160": 11,
+    "202": 2
+   },
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v3",
+ "goal": "The kitchen is dark. Collect the yellow water bottle, the blue water bottle and the red mug on the tray, then press Submit. They may be anywhere in this kitchen; some compartments may not open. A lantern with a glowing glass stands on a counter. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "3f3c765fcb71536b",
+ "layout_id": 49,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-26T08:51:18",
+  "registry": "internal",
+  "seed": 3101152
+ },
+ "seed": 3101152,
+ "spec": {
+  "build_seed": 607930946,
+  "closers": [],
+  "compartment_count": 4,
+  "contract_version": "blackout-search-kitchen-v2",
+  "counter_band": {
+   "front_fraction": 0.6667,
+   "islands": "anywhere",
+   "wall_backed_only": true
+  },
+  "cover_seed": 1179032537,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "can_red",
+   "tin_yellow"
+  ],
+  "hiding": {
+   "doors": false,
+   "floor_min_m": 0.4,
+   "kinds": [
+    "drawer",
+    "open",
+    "covered"
+   ]
+  },
+  "lamp_seed": 489795569,
+  "layout_id": 49,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1318664026,
+  "set_size": 3,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_blue"
+   },
+   {
+    "kind": "open",
+    "object": "mug_red"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "can_green",
+   "mug_blue",
+   "tin_green"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-open+open+open",
+ "style_id": 9,
+ "task": "blackout_search"
+}

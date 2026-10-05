@@ -1,0 +1,214 @@
+{
+ "contract_version": "stamps-composition-kitchen-v3",
+ "factors": {
+  "composition": 2,
+  "kitchen_layout": 50,
+  "kitchen_style": 2,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "die_dots": [
+    3,
+    3,
+    3
+   ],
+   "placement": {
+    "min_board_footprint_margin_m": 0.02872,
+    "min_board_gap_m": 0.01954,
+    "min_board_submit_gap_m": 0.0164,
+    "min_stamp_gap_m": 0.0693,
+    "min_stamp_keepout_gap_m": 0.07073,
+    "min_stamp_region_margin_m": 0.01866,
+    "scratch_half_m": 0.1
+   },
+   "problems": [],
+   "recorded_solution_reachable": true,
+   "sampler_attempts": 1,
+   "solution_count": 1,
+   "solutions": [
+    [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ]
+   ],
+   "target_dots": 4,
+   "target_id": 40
+  },
+  "scene": {
+   "g1": true,
+   "g2": true,
+   "g2_max_move_mm": 0.0,
+   "g3": "not run (EGL device match failed in this tree)",
+   "g35": true
+  }
+ },
+ "generator_version": "v3",
+ "goal": "There are stamps on the counters in this kitchen. Stamp the final board so it shows exactly the pattern on the reference card, then press Submit. The final board is the blue-bordered one with the printed 3x3 grid; the green-bordered reference card is not for stamping. The round self-inking stamps stand face down on the work surface. Each prints a fixed pattern of dots in whatever direction it is held, and the unmarked housings show neither the pattern nor which way it points, so try them on the tan scratch board. Ink stays where it lands, on the scratch board and on the final board alike. Fill exactly the reference card's grid cells with no ink outside the final board's grid, put every stamp back down on the counter and let go, then press the red SUBMIT button. Your first submission ends the episode; a wrong submission or no submission fails. Other objects on the counter are not part of the task; you may move them if needed.",
+ "instance_id": "0505f4e81b2c37d3",
+ "layout_id": 50,
+ "origin": {
+  "cell": {
+   "composition": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-10-04T00:50:49",
+  "note": "2026-10-04 extra",
+  "registry": "internal",
+  "seed": 6100068,
+  "staging": "internal"
+ },
+ "seed": 6100068,
+ "spec": {
+  "board_yaw": {
+   "final": 0.00692,
+   "reference": 0.083333,
+   "scratch": 0.037723
+  },
+  "composition": 2,
+  "contract_version": "stamps-composition-kitchen-v3",
+  "handle_rgba": [
+   [
+    0.3,
+    0.45,
+    0.68,
+    1.0
+   ],
+   [
+    0.46,
+    0.4,
+    0.6,
+    1.0
+   ],
+   [
+    0.4,
+    0.58,
+    0.42,
+    1.0
+   ]
+  ],
+  "hidden": [],
+  "hidden_plan": {
+   "flavour_drawn": null,
+   "flavour_fallback": false,
+   "look": [],
+   "object_candidates": [],
+   "place_candidates": [],
+   "rescatter": null,
+   "uncover_flavour": null
+  },
+  "initial_yaw_rad": [
+   0.749521,
+   1.530173,
+   0.650207
+  ],
+  "mask_ids": [
+   4,
+   5,
+   7
+  ],
+  "observability": "visible",
+  "paper_rgb": {
+   "final": [
+    238,
+    240,
+    244
+   ],
+   "reference": [
+    238,
+    240,
+    244
+   ],
+   "scratch": [
+    248,
+    244,
+    238
+   ]
+  },
+  "placement": {
+   "final": [
+    0.342676,
+    -0.050282
+   ],
+   "reference": [
+    0.332156,
+    0.151544
+   ],
+   "scratch": [
+    -0.203849,
+    0.056597
+   ],
+   "submit": [
+    0.345,
+    -0.198
+   ]
+  },
+  "sampler_attempts": 1,
+  "scratch_cells": 4,
+  "show_count": false,
+  "sole_rgba": [
+   0.24,
+   0.27,
+   0.3,
+   1.0
+  ],
+  "solution": [
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    0
+   ]
+  ],
+  "stamp_count": 3,
+  "stamp_xy": [
+   [
+    0.126115,
+    -0.166909
+   ],
+   [
+    -0.06316,
+    -0.169941
+   ],
+   [
+    -0.310938,
+    -0.211342
+   ]
+  ],
+  "target": [
+   [
+    1,
+    0,
+    1
+   ],
+   [
+    0,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    0
+   ]
+  ],
+  "target_bits": 53,
+  "target_id": 40,
+  "unique": true
+ },
+ "split": "dev",
+ "split_key": "t40-k2",
+ "style_id": 2,
+ "task": "stamps"
+}

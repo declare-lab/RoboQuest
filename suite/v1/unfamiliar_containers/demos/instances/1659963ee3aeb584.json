@@ -1,0 +1,180 @@
+{
+ "contract_version": "unfamiliar-containers-kitchen-v3",
+ "factors": {
+  "item_count": 2,
+  "kitchen_layout": 16,
+  "kitchen_style": 10,
+  "observability": "visible"
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "box_count": 4,
+   "closers": [
+    3
+   ],
+   "decoys": [],
+   "holder_mechanisms": [
+    "lift_lid",
+    "slide_lid"
+   ],
+   "holders": [
+    0,
+    2
+   ],
+   "island": true,
+   "item_count": 2,
+   "mechanisms": [
+    "drawer",
+    "lift_lid",
+    "press_door",
+    "slide_lid"
+   ],
+   "observability": {
+    "hidden": [],
+    "level": "visible"
+   },
+   "problems": [],
+   "sides": [
+    "back",
+    "front",
+    "left",
+    "top"
+   ]
+  }
+ },
+ "generator_version": "v4",
+ "goal": "There are boxes on the counters in this kitchen. A lime and an orange are inside them. Put both in the bowl, then press Submit.",
+ "instance_id": "1659963ee3aeb584",
+ "layout_id": 16,
+ "origin": {
+  "cell": {
+   "item_count": 2,
+   "observability": "visible"
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-24T23:13:09",
+  "registry": "internal",
+  "seed": 3100930
+ },
+ "seed": 3100930,
+ "spec": {
+  "appearance": {
+   "case_texture": "wood/light_wood_planks_2.png",
+   "knob_rgb": [
+    0.72,
+    0.73,
+    0.75
+   ],
+   "panel_texture": "wood/light_wood_planks_long.png"
+  },
+  "bowl_xy": [
+   -0.198948,
+   -0.17116
+  ],
+  "box_count": 4,
+  "boxes": [
+   {
+    "direction": "right",
+    "dummy_face": "left",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 0,
+    "mechanism": "lift_lid",
+    "side": "top",
+    "yaw": 1.516896,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "left",
+    "dummy_face": "top",
+    "dummy_side": "top",
+    "face": "back",
+    "hinge": "right",
+    "index": 1,
+    "mechanism": "drawer",
+    "side": "left",
+    "yaw": 1.576882,
+    "yaw_quarter": 1
+   },
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "top",
+    "hinge": "right",
+    "index": 2,
+    "mechanism": "slide_lid",
+    "side": "top",
+    "yaw": 3.198504,
+    "yaw_quarter": 2
+   },
+   {
+    "direction": "left",
+    "dummy_face": "back",
+    "dummy_side": "front",
+    "face": "front",
+    "hinge": "right",
+    "index": 3,
+    "mechanism": "press_door",
+    "side": "back",
+    "yaw": 3.127454,
+    "yaw_quarter": 2
+   }
+  ],
+  "closers": [
+   3
+  ],
+  "contract_version": "unfamiliar-containers-kitchen-v3",
+  "decoy_count": 0,
+  "decoys": [],
+  "footprint": [
+   1.8,
+   0.6
+  ],
+  "held_out_holder": null,
+  "hidden": [],
+  "holder_mechanisms": [
+   "lift_lid",
+   "slide_lid"
+  ],
+  "holder_pool": "dev",
+  "holders": [
+   0,
+   2
+  ],
+  "item_assets": [
+   "objects/objaverse/lime/lime_1/model.xml",
+   "objects/objaverse/orange/orange_2/model.xml"
+  ],
+  "item_count": 2,
+  "item_names": [
+   "lime",
+   "orange"
+  ],
+  "kitchen_layout": 16,
+  "kitchen_style": 10,
+  "layout_seed": 1939585383,
+  "min_spacing": 0.55,
+  "observability": "visible",
+  "placement_order": [
+   3,
+   2,
+   0,
+   1
+  ],
+  "placement_seed": 789906655,
+  "show_count": false,
+  "submit_xy": [
+   0.180932,
+   -0.189434
+  ],
+  "work_fixture_is_island": true
+ },
+ "split": "dev",
+ "split_key": "lift_lid+slide_lid",
+ "style_id": 10,
+ "task": "unfamiliar_containers"
+}

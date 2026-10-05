@@ -1,0 +1,106 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 54,
+  "kitchen_style": 3,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 16,
+    "doors": {
+     "240": 3,
+     "305": 1
+    },
+    "drawers": {
+     "160": 3,
+     "202": 2
+    },
+    "free": 84,
+    "open": 29
+   },
+   "capacity_layout": 54,
+   "closers": [
+    3
+   ],
+   "hidden_compartments_needed": 3,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open",
+    "drawer"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the yellow tin, the green can and the red can on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "7efd3b0eb5873b01",
+ "layout_id": 54,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T10:42:19",
+  "registry": "internal",
+  "seed": 4100341
+ },
+ "seed": 4100341,
+ "spec": {
+  "build_seed": 1811646129,
+  "closers": [
+   3
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 590273295,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_yellow",
+   "tin_green"
+  ],
+  "layout_id": 54,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 786581695,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "can_green"
+   },
+   {
+    "kind": "drawer",
+    "object": "can_red"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "mug_blue",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-drawer+open+open",
+ "style_id": 3,
+ "task": "search_room"
+}

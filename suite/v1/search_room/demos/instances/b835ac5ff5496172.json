@@ -1,0 +1,102 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 32,
+  "kitchen_style": 3,
+  "set_size": 2
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 6,
+    "doors": {
+     "240": 2,
+     "305": 1
+    },
+    "drawers": {
+     "160": 3,
+     "202": 2
+    },
+    "free": 70,
+    "open": 20
+   },
+   "capacity_layout": 32,
+   "closers": [
+    2
+   ],
+   "hidden_compartments_needed": 3,
+   "problems": [],
+   "target_kinds": [
+    "drawer",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the red can and the blue water bottle on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "b835ac5ff5496172",
+ "layout_id": 32,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 2
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T10:19:28",
+  "registry": "internal",
+  "seed": 3000530
+ },
+ "seed": 3000530,
+ "spec": {
+  "build_seed": 1721393353,
+  "closers": [
+   2
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 12175875,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "can_green",
+   "mug_blue"
+  ],
+  "layout_id": 32,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 228101071,
+  "set_size": 2,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "drawer",
+    "object": "can_red"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_yellow",
+   "mug_red",
+   "tin_green",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s2-drawer+open",
+ "style_id": 3,
+ "task": "search_room"
+}

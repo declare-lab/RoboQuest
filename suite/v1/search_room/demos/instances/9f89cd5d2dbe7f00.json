@@ -1,0 +1,104 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 59,
+  "kitchen_style": 3,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 19,
+    "doors": {
+     "305": 1
+    },
+    "drawers": {
+     "160": 5
+    },
+    "free": 70,
+    "open": 30
+   },
+   "capacity_layout": 59,
+   "closers": [
+    0
+   ],
+   "hidden_compartments_needed": 3,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "covered",
+    "drawer"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the green tin, the yellow tin and the red mug on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "9f89cd5d2dbe7f00",
+ "layout_id": 59,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T11:38:02",
+  "registry": "internal",
+  "seed": 4100562
+ },
+ "seed": 4100562,
+ "spec": {
+  "build_seed": 1051257948,
+  "closers": [
+   0
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1684962043,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "bottle_yellow",
+   "can_red"
+  ],
+  "layout_id": 59,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1626395691,
+  "set_size": 3,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "tin_green"
+   },
+   {
+    "kind": "covered",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "drawer",
+    "object": "mug_red"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "can_green",
+   "mug_blue"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-covered+drawer+open",
+ "style_id": 3,
+ "task": "search_room"
+}

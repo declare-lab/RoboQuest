@@ -1,0 +1,7 @@
+# run outputs (episodes, benchmark lanes, replay reports) and local caches
+artifacts/
+runs/
+__pycache__/
+*.pyc
+.env
+*.env

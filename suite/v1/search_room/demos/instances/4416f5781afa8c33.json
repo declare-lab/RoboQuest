@@ -1,0 +1,108 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 8,
+  "kitchen_layout": 17,
+  "kitchen_style": 5,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 20,
+    "doors": {
+     "240": 6
+    },
+    "drawers": {
+     "160": 2,
+     "185": 10,
+     "328": 3
+    },
+    "free": 112,
+    "open": 36
+   },
+   "capacity_layout": 17,
+   "closers": [
+    3,
+    6
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "covered",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the green can, the red mug and the blue mug on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "4416f5781afa8c33",
+ "layout_id": 17,
+ "origin": {
+  "cell": {
+   "compartment_count": 8,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T05:08:04",
+  "registry": "internal",
+  "seed": 3500057
+ },
+ "seed": 3500057,
+ "spec": {
+  "build_seed": 1834237224,
+  "closers": [
+   3,
+   6
+  ],
+  "compartment_count": 8,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1623534055,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "can_red",
+   "tin_green"
+  ],
+  "layout_id": 17,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 1952083191,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "can_green"
+   },
+   {
+    "kind": "covered",
+    "object": "mug_red"
+   },
+   {
+    "kind": "open",
+    "object": "mug_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "bottle_yellow",
+   "tin_yellow"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-covered+open+open",
+ "style_id": 5,
+ "task": "search_room"
+}

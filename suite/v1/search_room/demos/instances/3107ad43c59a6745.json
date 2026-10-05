@@ -1,0 +1,107 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 24,
+  "kitchen_style": 3,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 18,
+    "doors": {
+     "240": 2,
+     "305": 1,
+     "335": 1
+    },
+    "drawers": {
+     "185": 2,
+     "328": 1
+    },
+    "free": 70,
+    "open": 30
+   },
+   "capacity_layout": 24,
+   "closers": [
+    0
+   ],
+   "hidden_compartments_needed": 3,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "drawer",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the yellow water bottle, the yellow tin and the blue water bottle on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "3107ad43c59a6745",
+ "layout_id": 24,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-25T11:05:08",
+  "registry": "internal",
+  "seed": 3100752
+ },
+ "seed": 3100752,
+ "spec": {
+  "build_seed": 760391090,
+  "closers": [
+   0
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 2090568284,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "mug_blue",
+   "tin_green"
+  ],
+  "layout_id": 24,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 879717212,
+  "set_size": 3,
+  "show_count": false,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   },
+   {
+    "kind": "drawer",
+    "object": "tin_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "bottle_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "can_green",
+   "can_red",
+   "mug_red"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-drawer+open+open",
+ "style_id": 3,
+ "task": "search_room"
+}

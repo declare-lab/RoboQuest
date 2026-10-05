@@ -1,0 +1,109 @@
+{
+ "contract_version": "search-room-kitchen-v2",
+ "factors": {
+  "compartment_count": 4,
+  "kitchen_layout": 13,
+  "kitchen_style": 7,
+  "set_size": 3
+ },
+ "gate": {
+  "passed": true,
+  "report": {
+   "capacity": {
+    "cover": 7,
+    "doors": {
+     "237": 1,
+     "240": 4
+    },
+    "drawers": {
+     "177": 4,
+     "185": 3,
+     "194": 2
+    },
+    "free": 86,
+    "open": 18
+   },
+   "capacity_layout": 13,
+   "closers": [
+    0,
+    1
+   ],
+   "hidden_compartments_needed": 2,
+   "problems": [],
+   "target_kinds": [
+    "open",
+    "open",
+    "open"
+   ]
+  }
+ },
+ "generator_version": "v1.1",
+ "goal": "Collect the yellow water bottle, the green can and the blue mug on the tray, then press Submit. They may be anywhere in this kitchen; only compartments with handles can be opened. Other objects are not part of the task; you may move them if needed.",
+ "instance_id": "f4bd28b6017affc3",
+ "layout_id": 13,
+ "origin": {
+  "cell": {
+   "compartment_count": 4,
+   "set_size": 3
+  },
+  "kind": "minted-candidate",
+  "kitchens": "registry development split",
+  "minted_at": "2026-09-28T05:12:37",
+  "registry": "internal",
+  "seed": 3101051
+ },
+ "seed": 3101051,
+ "spec": {
+  "build_seed": 360675992,
+  "closers": [
+   0,
+   1
+  ],
+  "compartment_count": 4,
+  "contract_version": "search-room-kitchen-v2",
+  "cover_seed": 1953819127,
+  "cover_size": "large",
+  "hidden_distractors": [
+   "can_red",
+   "tin_yellow"
+  ],
+  "layout_id": 13,
+  "placement": {
+   "submit": [
+    0.2,
+    -0.03
+   ],
+   "tray": [
+    -0.14,
+    -0.03
+   ]
+  },
+  "pose_seed": 345152515,
+  "set_size": 3,
+  "show_count": true,
+  "targets": [
+   {
+    "kind": "open",
+    "object": "bottle_yellow"
+   },
+   {
+    "kind": "open",
+    "object": "can_green"
+   },
+   {
+    "kind": "open",
+    "object": "mug_blue"
+   }
+  ],
+  "tray_half_m": 0.17,
+  "visible": [
+   "bottle_blue",
+   "mug_red",
+   "tin_green"
+  ]
+ },
+ "split": "dev",
+ "split_key": "s3-open+open+open",
+ "style_id": 7,
+ "task": "search_room"
+}

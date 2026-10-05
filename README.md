@@ -1,20 +1,53 @@
-# RoboQuest
+<div align="center">
 
-RoboQuest is a benchmark of ten long-horizon mobile-manipulation tasks in simulated RoboCasa kitchens, in three
-families: Search & Explore, Object Inspect and Testing. Each task hides what the agent needs to know (which parcels
-are heavier, which stamp prints which pattern, where an object is stored, which bolt unlocks first), so an agent
-has to find it out by acting: looking around, opening things, weighing, testing. At each decision the agent sees
-three 512×512 camera images (two scene cameras and the wrist) and the robot's proprioception, and moves the robot
-through a small tool interface (`arm`, `base`, `wait`, `stop`), with no locate or grasp helpers; an episode ends
-when the agent presses a physical Submit button.
+<h1>RoboQuest</h1>
 
-The evaluation set is 500 frozen instances, 50 per task, the same for every agent: 200 decisions per episode, each
-command running up to 200 ticks (10 s), with images kept for the two most recent observations and the text history
-kept in full.
+<h3>Generalist Physical Agents that Search, Inspect and Test</h3>
 
-## Quick start
+<h4><a href="https://declare-lab.github.io/RoboQuest/">Project Page</a> | Paper (coming soon) | <a href="https://huggingface.co/datasets/declare-lab/RoboQuest">Dataset</a></h4>
 
-### 1. Requirements
+</div>
+
+RoboQuest is a benchmark for goal-directed embodied exploration, in which a mobile manipulator must gather
+task-relevant information through physical interaction, act on the evidence, and decide for itself when the task is
+done.
+
+## ✨ Highlights
+
+- 🏠 **Ten mobile-manipulation tasks** in RoboCasa365 kitchens, in three families: Search & Explore, Object
+  Inspect and Testing.
+- 🔍 **Hidden information by design**: every task hides what it needs (where the targets are, a label under a
+  vessel, which parcel is odd, the order in which bolts block each other, ...), and the agent ends an episode by
+  physically pressing a Submit button.
+- 🎯 **500 evaluation instances**, 50 per task, with held-out kitchen styles; scored by success rate and a staged
+  progress measure.
+- 🤖 **Five frontier multimodal models** evaluated zero-shot through one visuomotor interface (GPT-6 Astra, Claude
+  Opus 5.5, GPT-6.1 Sol, Claude Fable 5.1, Gemini 3.8 Flash); the best succeeds in 23.2% of episodes.
+- 🔌 **Any model or policy**: API models from the major providers or any OpenAI-compatible server, external CLI
+  agents, and robot policies over openpi's WebSocket protocol.
+- 💽 **5,000 verified demonstrations** (500 per task, 366 hours at 20 Hz) with two-level language annotations, in
+  LeRobot format and as replayable simulator recordings.
+
+## 🧩 Tasks
+
+| Family | Task | Hidden information | What the agent must do |
+|---|---|---|---|
+| Search & Explore | Locked Storage (`locked_storage`) | the target behind locks | Find an object behind compartments that open only while a matching coloured token rests on their reader. |
+| | Search Room (`search_room`) | where the targets are | Find objects hidden anywhere in the kitchen, in compartments with handles, and collect them on a tray. |
+| | Blackout Search (`blackout_search`) | targets in the dark | The same in a dark kitchen, with a lantern to carry. |
+| Object Inspect | Painted Cubes (`painted_cubes`) | marks on unseen faces | Sort cubes into a blue and a yellow bin by a rule about marks on their faces, some of which are hidden. |
+| | Marked Mugs (`marked_mugs`) | labels under vessels | Put each mug or bowl upright on the pad matching the coloured label on its bottom, with its own two balls inside. |
+| | Unfamiliar Containers (`unfamiliar_containers`) | how containers open | Open unfamiliar boxes (lids, drawers, knobs, doors) to get the items inside into a bowl. |
+| Testing | Puzzle Box (`puzzle_box`) | bolt blocking order | Open a wooden puzzle box whose lid is locked by sliding bolts, take out the item inside and stand it in the tray. |
+| | Stamp Composition (`stamps`) | patterns and rotations | Reproduce a reference dot pattern on a board with stamps whose patterns and orientations are unknown until tried. |
+| | Wobbly Stand (`wobbly_stand`) | short legs and gaps | Level a wobbly stand with shims so a ball stays still on top. |
+| | Odd Parcel (`odd_parcel`) | which parcel is odd | Find the parcels that weigh differently (a balance stands nearby) and put exactly those in the box. |
+
+Each instance's exact goal text is in its registry row (`suite/v1/<task>/registry/registry.json`).
+
+## 🛠️ Installation
+
+### Requirements
 
 - Linux (x86-64) with an NVIDIA GPU and its driver. Cameras render headless through EGL; each running episode needs
   about 2 GB of GPU memory. No root access is needed.
@@ -25,7 +58,7 @@ kept in full.
 Python and every package are installed by the setup scripts with [uv](https://docs.astral.sh/uv/) into one runtime
 folder you choose, as a uv virtual environment. Nothing is installed system-wide and no conda is involved.
 
-### 2. Install
+### Install
 
 ```bash
 git clone <repository URL> roboquest && cd roboquest
@@ -58,7 +91,7 @@ source ~/roboquest-runtime/envs/robocasa/bin/activate
 export PYTHONPATH=$PWD MUJOCO_GL=egl
 ```
 
-### 3. Check the installation
+### Check the installation
 
 ```bash
 # every task builds; ends with "ALL CHECKS PASSED"
@@ -68,26 +101,28 @@ scripts/run.sh scripts/smoke.py
 bash scripts/run_episode.sh --agent api --model anthropic/claude-opus-5-5 --task roboquest_puzzle_box --offline
 ```
 
-### 4. Add an API key
+## 🧑‍💻 Usage
+
+### Add an API key
 
 ```bash
-# copy the template, keep it private, then fill in the keys you use (which provider reads which: Connecting a model)
+# copy the template, keep it private, then fill in the keys you use (which provider reads which: [Connecting a model](#connecting-a-model))
 cp keys.env.example keys.env && chmod 600 keys.env
 # every run then takes --env-file keys.env; or export the variable instead, for example
 export OPENROUTER_API_KEY=...
 ```
 
-### 5. Run a model
+### Run a model
 
 ```bash
 # one episode: a task's default development instance (--list-tasks lists the tasks), on GPU 0 (--physical-gpu N)
 bash scripts/run_episode.sh --agent api --model openrouter/qwen/qwen3-vl-235b-a22b-instruct --env-file keys.env \
   --task roboquest_puzzle_box
-# the benchmark: 500 episodes, then the per-task table (options: Run the benchmark)
+# the benchmark: 500 episodes, then the per-task table (options: [Run the benchmark](#run-the-benchmark))
 bash scripts/benchmark.sh --model openrouter/qwen/qwen3-vl-235b-a22b-instruct --env-file keys.env
 ```
 
-## Connecting a model
+### Connecting a model
 
 `--model <provider>/<model id>` names the provider and the model's id there. The provider fixes the API format, the
 endpoint and the variable the key is read from:
@@ -127,7 +162,7 @@ bash scripts/run_episode.sh --agent api --model anthropic/claude-opus-5-5 --env-
 bash scripts/run_episode.sh --agent codex --task roboquest_puzzle_box
 ```
 
-## Running a robot policy
+### Running a robot policy
 
 A learned policy such as π0.5 runs the same episodes through [openpi](https://github.com/Physical-Intelligence/openpi)'s
 WebSocket protocol: serve the checkpoint with openpi, then point RoboQuest at the server. Each inference gets the
@@ -170,7 +205,7 @@ The public openpi checkpoints are trained on other robots, cameras and action sp
 mobile base, these kitchens or a Submit button: a policy needs fine-tuning on RoboCasa PandaOmron data with this
 observation and action layout before it can do anything useful here.
 
-## Run the benchmark
+### Run the benchmark
 
 ```bash
 M=openrouter/qwen/qwen3-vl-235b-a22b-instruct
@@ -189,7 +224,7 @@ bash scripts/benchmark.sh --model $M --dry-run
 bash scripts/benchmark.sh --model $M --summarize
 ```
 
-## What an episode saves
+### What an episode saves
 
 Each episode writes a directory (`--out`; default `artifacts/episodes/<run id>` for one episode,
 `runs/<model>/<task>/<instance>` in a benchmark run), on average about 475 MB, so a full run of 500 needs about
@@ -207,24 +242,15 @@ Each episode writes a directory (`--out`; default `artifacts/episodes/<run id>` 
 | `physical-trace-private.jsonl` | the simulator state at every 20 Hz tick (progress is computed from it) | ~130 MB |
 | `inference.jsonl` (`--agent policy`) | every inference: its seed, latency, the actions received and the actions executed | grows with the episode |
 
-## Tasks
+### Replay a recorded episode
 
-| Family | Task | Hidden information | What the agent must do |
-|---|---|---|---|
-| Search & Explore | Locked Storage (`locked_storage`) | the target behind locks | Find an object behind compartments that open only while a matching coloured token rests on their reader. |
-| | Search Room (`search_room`) | where the targets are | Find objects hidden anywhere in the kitchen, in compartments with handles, and collect them on a tray. |
-| | Blackout Search (`blackout_search`) | targets in the dark | The same in a dark kitchen, with a lantern to carry. |
-| Object Inspect | Painted Cubes (`painted_cubes`) | marks on unseen faces | Sort cubes into a blue and a yellow bin by a rule about marks on their faces, some of which are hidden. |
-| | Marked Mugs (`marked_mugs`) | labels under vessels | Put each mug or bowl upright on the pad matching the coloured label on its bottom, with its own two balls inside. |
-| | Unfamiliar Containers (`unfamiliar_containers`) | how containers open | Open unfamiliar boxes (lids, drawers, knobs, doors) to get the items inside into a bowl. |
-| Testing | Puzzle Box (`puzzle_box`) | bolt blocking order | Open a wooden puzzle box whose lid is locked by sliding bolts, take out the item inside and stand it in the tray. |
-| | Stamp Composition (`stamps`) | patterns and rotations | Reproduce a reference dot pattern on a board with stamps whose patterns and orientations are unknown until tried. |
-| | Wobbly Stand (`wobbly_stand`) | short legs and gaps | Level a wobbly stand with shims so a ball stays still on top. |
-| | Odd Parcel (`odd_parcel`) | which parcel is odd | Find the parcels that weigh differently (a balance stands nearby) and put exactly those in the box. |
+```bash
+# rerun an episode recorded with this repository from its recorded provider responses, and compare every request,
+# the commands, the physics and the score with the recording (for example on another machine or installation)
+bash scripts/run_agent.sh scripts/verify_replay.py --one <episode dir> --gpu 0 --out replay-check
+```
 
-Each instance's exact goal text is in its registry row (`suite/v1/<task>/registry/registry.json`).
-
-## Scores
+## 📏 Scoring
 
 - **Success rate**: the share of episodes whose goal state holds at a valid press of the physical Submit button.
   Submitting ends the episode; not submitting fails. The task code decides it at the press (`score.success` in
@@ -241,7 +267,7 @@ Each instance's exact goal text is in its registry row (`suite/v1/<task>/registr
 
 The complete definitions are in [docs/progress.md](docs/progress.md).
 
-## Results
+## 🏆 Results
 
 Five models on the 500 evaluation instances (`suite/v1/eval50/`), 50 per task, 500 episodes per model. Each cell
 is success rate / mean progress, in percent.
@@ -266,10 +292,10 @@ GPT-6 Astra, Claude Opus 5.5, GPT-6.1 Sol and Claude Fable 5.1 run with medium t
 [results/eval50/episodes.csv](results/eval50/episodes.csv), whose `success` and `progress` columns are the table
 above; per task and model: `results/eval50/summary.csv` and `summary.md`.
 
-## Demonstration dataset
+## 💽 Demonstration Dataset
 
 5,000 verified demonstrations, 500 per task, recorded at 20 Hz (about 366 hours), with a two-level annotation of
-every episode (stages and subtasks). Hosted on Hugging Face (link to follow), in two forms:
+every episode (stages and subtasks). Hosted on Hugging Face at [declare-lab/RoboQuest](https://huggingface.co/datasets/declare-lab/RoboQuest), in two forms:
 
 - `lerobot/<task>/`: LeRobot v2.1 datasets with three 256×256 camera streams (left and right scene cameras, wrist),
   the 16-D state and 12-D action at every frame, the goal text as the task, and per-frame stage and subtask indices.
@@ -286,31 +312,50 @@ MUJOCO_GL=egl python scripts/dataset/rerender.py <raw episode dir> <out dir> --s
 
 `scripts/dataset/README.md` covers re-rendering and the LeRobot v2.1 conversion (`convert_lerobot_v21.py`).
 
-## Replay a recorded episode
+## 🗂️ Repository Structure
 
-```bash
-# rerun an episode recorded with this repository from its recorded provider responses, and compare every request,
-# the commands, the physics and the score with the recording (for example on another machine or installation)
-bash scripts/run_agent.sh scripts/verify_replay.py --one <episode dir> --gpu 0 --out replay-check
+```text
+roboquest/tasks/          one RoboCasa kitchen task per benchmark task
+roboquest/<family>/       task geometry, objects, rules, scene building, visibility and reach checks
+roboquest/base/           scene base classes: the kitchen scene, support and resting contracts, the Submit button
+roboquest/harness/        episode runner, tool protocol and prompt, model providers, recording
+roboquest/scoring/        progress and the per-cell grading of printed stamp dots
+suite/v1/<task>/registry/ frozen instances (development and evaluation rows) with their gate reports
+suite/v1/<task>/demos/    the scenes of the demonstration dataset (500 per task)
+suite/v1/eval50/          the 50 evaluation instance ids per task
+results/eval50/           results per episode (episodes.csv) and per task and model (summary.csv, summary.md)
+docs/progress.md          the scoring: success and progress, task by task
+scripts/                  episode and benchmark launchers, replay verifier, setup scripts
+scripts/dataset/          re-rendering recorded demonstrations and the LeRobot v2.1 conversion
 ```
 
-## Layout
+## 📝 Citation
 
-| Path | Contents |
-|---|---|
-| `roboquest/tasks/` | One RoboCasa kitchen task per benchmark task |
-| `roboquest/<task family>/`, `roboquest/*.py` | Task geometry, objects, rules, scene building, visibility and reach checks |
-| `roboquest/base/` | Scene base classes: the kitchen scene, support/resting contracts, the Submit button |
-| `roboquest/harness/` | Episode runner, tool protocol and prompt, model providers, recording |
-| `roboquest/scoring/` | Progress (`progress.py`) and the per-cell grading of printed stamp dots |
-| `suite/v1/<task>/registry/` | Frozen instances (development and evaluation rows) with their gate reports |
-| `suite/v1/<task>/demos/` | The scenes of the demonstration dataset (500 per task) |
-| `suite/v1/eval50/` | The 50 evaluation instance ids per task |
-| `results/eval50/` | Results per episode (`episodes.csv`) and per task and model (`summary.csv`, `summary.md`) |
-| `docs/progress.md` | The scoring: success and progress, task by task |
-| `scripts/` | Episode and benchmark launchers, replay verifier, setup scripts |
-| `scripts/dataset/` | Re-rendering recorded demonstrations and the LeRobot v2.1 conversion |
+```bibtex
+@misc{liu2026roboquest,
+  title  = {{RoboQuest}: Generalist Physical Agents that Search, Inspect and Test},
+  author = {Liu, Renhang and Majumder, Navonil and Pala, Tej Deep and Poria, Soujanya},
+  year   = {2026},
+  note   = {arXiv preprint (coming soon)}
+}
+```
 
-## Status
+## 🙏 Acknowledgements
 
-Pre-release, local. No license yet.
+RoboQuest builds on [RoboCasa](https://robocasa.ai/) (kitchens and assets, including RoboCasa365),
+[robosuite](https://robosuite.ai/) and [MuJoCo](https://mujoco.org/) (simulation),
+[Inspect Robots](https://github.com/robocurve/inspect-robots) (the agent harness),
+[openpi](https://github.com/Physical-Intelligence/openpi) (the robot-policy protocol and the π0.5 baseline) and
+[LeRobot](https://github.com/huggingface/lerobot) (the dataset format). The lantern in Blackout Search is
+[Lantern 01](https://polyhaven.com/a/Lantern_01) from Poly Haven (CC0). We thank their authors and maintainers.
+
+## ⚖️ License
+
+To be announced.
+
+<p align="center">
+  <img alt="Python 3.11" src="https://img.shields.io/badge/Python-3.11-475569?style=flat-square&logo=python&logoColor=white&labelColor=64748b" height="22"/>&nbsp;
+  <img alt="MuJoCo" src="https://img.shields.io/badge/Simulator-MuJoCo-475569?style=flat-square&labelColor=64748b" height="22"/>&nbsp;
+  <img alt="RoboCasa" src="https://img.shields.io/badge/Kitchens-RoboCasa365-475569?style=flat-square&labelColor=64748b" height="22"/>&nbsp;
+  <img alt="LeRobot v2.1" src="https://img.shields.io/badge/Dataset-LeRobot_v2.1-475569?style=flat-square&labelColor=64748b" height="22"/>
+</p>

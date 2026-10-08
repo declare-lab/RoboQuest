@@ -4,7 +4,7 @@
 
 <h3>Generalist Physical Agents that Search, Inspect and Test</h3>
 
-<h4><a href="https://declare-lab.github.io/RoboQuest/">Project Page</a> | Paper (coming soon) | <a href="https://huggingface.co/datasets/declare-lab/RoboQuest">Dataset</a></h4>
+<h4><a href="https://declare-lab.github.io/RoboQuest/">Project Page</a> | <a href="https://arxiv.org/abs/2610.10388">Paper</a> | <a href="https://huggingface.co/datasets/declare-lab/RoboQuest">Dataset</a></h4>
 
 </div>
 
@@ -359,11 +359,12 @@ scripts/dataset/          re-rendering recorded demonstrations and the LeRobot v
 ## 📝 Citation
 
 ```bibtex
-@misc{liu2026roboquest,
-  title  = {{RoboQuest}: Generalist Physical Agents that Search, Inspect and Test},
-  author = {Liu, Renhang and Majumder, Navonil and Pala, Tej Deep and Poria, Soujanya},
-  year   = {2026},
-  note   = {arXiv preprint (coming soon)}
+@article{liu2026roboquest,
+  title   = {{RoboQuest}: Generalist Physical Agents that Search, Inspect and Test},
+  author  = {Liu, Renhang and Majumder, Navonil and Pala, Tej Deep and Poria, Soujanya},
+  journal = {arXiv preprint arXiv:2610.10388},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2610.10388}
 }
 ```
 

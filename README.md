@@ -379,11 +379,14 @@ RoboQuest builds on [RoboCasa](https://robocasa.ai/) (kitchens and assets, inclu
 
 ## ⚖️ License
 
-To be announced.
+RoboQuest is released under the [MIT License](LICENSE). The demonstration dataset on
+[Hugging Face](https://huggingface.co/datasets/declare-lab/RoboQuest) is released under the MIT License as well.
+Third-party assets keep their own licenses.
 
 <p align="center">
   <img alt="Python 3.11" src="https://img.shields.io/badge/Python-3.11-475569?style=flat-square&logo=python&logoColor=white&labelColor=64748b" height="22"/>&nbsp;
   <img alt="MuJoCo" src="https://img.shields.io/badge/Simulator-MuJoCo-475569?style=flat-square&labelColor=64748b" height="22"/>&nbsp;
   <img alt="RoboCasa" src="https://img.shields.io/badge/Kitchens-RoboCasa365-475569?style=flat-square&labelColor=64748b" height="22"/>&nbsp;
-  <img alt="LeRobot v2.1" src="https://img.shields.io/badge/Dataset-LeRobot_v2.1-475569?style=flat-square&labelColor=64748b" height="22"/>
+  <img alt="LeRobot v2.1" src="https://img.shields.io/badge/Dataset-LeRobot_v2.1-475569?style=flat-square&labelColor=64748b" height="22"/>&nbsp;
+  <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-475569?style=flat-square&labelColor=64748b" height="22"/>
 </p>

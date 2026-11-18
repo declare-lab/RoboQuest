@@ -23,8 +23,8 @@ import traceback
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-RELEASE_TASKS = ('puzzle_box', 'wobbly_stand', 'odd_parcel', 'search_room', 'stamps',
-                 'marked_mugs', 'painted_cubes', 'unfamiliar_containers')
+RELEASE_TASKS = ('locked_storage', 'search_room', 'blackout_search', 'painted_cubes', 'marked_mugs',
+                 'unfamiliar_containers', 'puzzle_box', 'stamps', 'wobbly_stand', 'odd_parcel')
 
 
 def registry_dir(root, task):
@@ -126,7 +126,7 @@ def oracle_check(root, task, instance_id, options, horizon):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--registry-root', default='suite/v1', help='directory holding <task>/registry (default suite/v1)')
-    parser.add_argument('--tasks', nargs='*', default=None, help='tasks to build (default: the eight release tasks)')
+    parser.add_argument('--tasks', nargs='*', default=None, help='tasks to build (default: the ten release tasks)')
     parser.add_argument('--ids', nargs='*', default=[], metavar='TASK=ID', help='instance to use for a task')
     parser.add_argument('--every-layout', action='store_true', help='build one instance per kitchen layout of each task')
     parser.add_argument('--steps', type=int, default=20, help='zero-action steps after reset (default 20)')
